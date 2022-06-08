@@ -14,6 +14,8 @@
 		A04B9CFF2851471900A7CD5F /* myFitnessAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9CFE2851471900A7CD5F /* myFitnessAppTests.swift */; };
 		A04B9D092851471900A7CD5F /* myFitnessAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9D082851471900A7CD5F /* myFitnessAppUITests.swift */; };
 		A04B9D0B2851471900A7CD5F /* myFitnessAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9D0A2851471900A7CD5F /* myFitnessAppUITestsLaunchTests.swift */; };
+		A04B9D182851477600A7CD5F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A04B9D172851477600A7CD5F /* .gitignore */; };
+		A04B9D1A285147C900A7CD5F /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A04B9D19285147C900A7CD5F /* .gitattributes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		A04B9D042851471900A7CD5F /* myFitnessAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myFitnessAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04B9D082851471900A7CD5F /* myFitnessAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFitnessAppUITests.swift; sourceTree = "<group>"; };
 		A04B9D0A2851471900A7CD5F /* myFitnessAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFitnessAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A04B9D172851477600A7CD5F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A04B9D19285147C900A7CD5F /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 		A04B9CE12851471700A7CD5F = {
 			isa = PBXGroup;
 			children = (
+				A04B9D19285147C900A7CD5F /* .gitattributes */,
+				A04B9D172851477600A7CD5F /* .gitignore */,
 				A04B9CEC2851471700A7CD5F /* myFitnessApp */,
 				A04B9CFD2851471900A7CD5F /* myFitnessAppTests */,
 				A04B9D072851471900A7CD5F /* myFitnessAppUITests */,
@@ -232,7 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04B9CF52851471800A7CD5F /* Preview Assets.xcassets in Resources */,
+				A04B9D182851477600A7CD5F /* .gitignore in Resources */,
 				A04B9CF22851471800A7CD5F /* Assets.xcassets in Resources */,
+				A04B9D1A285147C900A7CD5F /* .gitattributes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
