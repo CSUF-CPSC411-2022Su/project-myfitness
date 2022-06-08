@@ -16,6 +16,7 @@
 		A04B9D0B2851471900A7CD5F /* myFitnessAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9D0A2851471900A7CD5F /* myFitnessAppUITestsLaunchTests.swift */; };
 		A04B9D182851477600A7CD5F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A04B9D172851477600A7CD5F /* .gitignore */; };
 		A04B9D1A285147C900A7CD5F /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A04B9D19285147C900A7CD5F /* .gitattributes */; };
+		A04B9D1D28514B5700A7CD5F /* meal_recommendations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9D1C28514B5700A7CD5F /* meal_recommendations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		A04B9D0A2851471900A7CD5F /* myFitnessAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFitnessAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A04B9D172851477600A7CD5F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A04B9D19285147C900A7CD5F /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		A04B9D1C28514B5700A7CD5F /* meal_recommendations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meal_recommendations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		A04B9CEC2851471700A7CD5F /* myFitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				A04B9D1B28514A8900A7CD5F /* FitnessMealRecommendations */,
 				A04B9CED2851471700A7CD5F /* myFitnessAppApp.swift */,
 				A04B9CEF2851471700A7CD5F /* ContentView.swift */,
 				A04B9CF12851471800A7CD5F /* Assets.xcassets */,
@@ -131,6 +134,14 @@
 				A04B9D0A2851471900A7CD5F /* myFitnessAppUITestsLaunchTests.swift */,
 			);
 			path = myFitnessAppUITests;
+			sourceTree = "<group>";
+		};
+		A04B9D1B28514A8900A7CD5F /* FitnessMealRecommendations */ = {
+			isa = PBXGroup;
+			children = (
+				A04B9D1C28514B5700A7CD5F /* meal_recommendations.swift */,
+			);
+			path = FitnessMealRecommendations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04B9CF02851471700A7CD5F /* ContentView.swift in Sources */,
+				A04B9D1D28514B5700A7CD5F /* meal_recommendations.swift in Sources */,
 				A04B9CEE2851471700A7CD5F /* myFitnessAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
