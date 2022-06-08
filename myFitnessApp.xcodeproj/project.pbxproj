@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A13401A28514D50009527E2 /* WorkoutCalorieLoss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13401928514D50009527E2 /* WorkoutCalorieLoss.swift */; };
 		A04B9CEE2851471700A7CD5F /* myFitnessAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9CED2851471700A7CD5F /* myFitnessAppApp.swift */; };
 		A04B9CF02851471700A7CD5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9CEF2851471700A7CD5F /* ContentView.swift */; };
 		A04B9CF22851471800A7CD5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04B9CF12851471800A7CD5F /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A13401928514D50009527E2 /* WorkoutCalorieLoss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCalorieLoss.swift; sourceTree = "<group>"; };
 		A04B9CEA2851471700A7CD5F /* myFitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04B9CED2851471700A7CD5F /* myFitnessAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFitnessAppApp.swift; sourceTree = "<group>"; };
 		A04B9CEF2851471700A7CD5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				A04B9CEF2851471700A7CD5F /* ContentView.swift */,
 				A04B9CF12851471800A7CD5F /* Assets.xcassets */,
 				A04B9CF32851471800A7CD5F /* Preview Content */,
+				7A13401928514D50009527E2 /* WorkoutCalorieLoss.swift */,
 			);
 			path = myFitnessApp;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A13401A28514D50009527E2 /* WorkoutCalorieLoss.swift in Sources */,
 				A04B9CF02851471700A7CD5F /* ContentView.swift in Sources */,
 				A04B9CEE2851471700A7CD5F /* myFitnessAppApp.swift in Sources */,
 			);
