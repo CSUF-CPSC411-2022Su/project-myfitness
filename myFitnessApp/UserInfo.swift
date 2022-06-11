@@ -6,24 +6,24 @@
 //
 
 import Foundation
-
+enum Exercise {
+    case littleToNone
+    case light
+    case moderate
+    case active
+    case veryActive
+}
 struct UserInfo{
     //TBD
     var weight: Double
     
-    var height: Int
+    var height: Double
     
     var gender: Bool
     
     var age: Int
     
-    enum Exercise {
-        case littleToNone
-        case light
-        case moderate
-        case active
-        case veryActive
-    }
+    var exercise: Exercise
     
     var BMR: Double {
         
@@ -37,31 +37,36 @@ struct UserInfo{
         }
     }
     
+    
+    let currentExercise: Exercise = .littleToNone
+    
     var AMR: Double {
         
         get {
-            switch Exercise {
-                case littleToNone
+            switch currentExercise {
+            case .littleToNone:
                     return BMR * 1.2
-                case light
+            case .light:
                     return BMR * 1.375
-                case moderate
+            case .moderate:
                     return BMR * 1.55
-                case active
+            case .active:
                     return BMR * 1.725
-                case veryActive
+            case .veryActive:
                     return BMR * 1.9
+            default:
+                return 0.0
             }
         }
         
     }
     
-    init(weight: Double, height: Double, gender: bool, age: Int, exercise: Exercise) {
+    init(weight: Double, height: Double, gender: Bool, age: Int, exercise: Exercise) {
         self.weight = weight
         self.height = height
         self.gender = gender
         self.age = age
-        self.Exercise = exercise
+        self.exercise = exercise
     }
     
     

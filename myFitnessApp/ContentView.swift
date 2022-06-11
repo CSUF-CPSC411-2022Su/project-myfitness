@@ -7,10 +7,16 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
+    @State var weight = ""
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            TextField("Weight", text: $weight)
+                .padding()
+                .keyboardType(.decimalPad)
+        }
     }
 }
 
