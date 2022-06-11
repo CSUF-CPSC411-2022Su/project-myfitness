@@ -29,9 +29,15 @@ struct UserInfo{
         
         get {
             if gender {
-                return Double(655.1 + (9.563 * weight) + (1.850 * height) - (4.676 * age))
+                var part1 = 655.1 + (9.563 * weight)
+                var part2 = (1.850 * height)
+                var part3 = (4.676 * Double(age))
+                return Double( part1 + part2  - part3 )
             } else {
-                return Double(66.47 + (13.75 * weight) + (5.003 * height) - (6.755 * age))
+                var part1 = 66.47 + (13.75 * weight)
+                var part2 = (5.003 * height)
+                var part3 = (6.755 * Double(age))
+                return Double(part1 + part2 - part3)
                 
             }
         }
