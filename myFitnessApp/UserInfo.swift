@@ -37,5 +37,32 @@ struct UserInfo{
         }
     }
     
+    var AMR: Double {
+        
+        get {
+            switch Exercise {
+                case littleToNone
+                    return BMR * 1.2
+                case light
+                    return BMR * 1.375
+                case moderate
+                    return BMR * 1.55
+                case active
+                    return BMR * 1.725
+                case veryActive
+                    return BMR * 1.9
+            }
+        }
+        
+    }
+    
+    init(weight: Double, height: Double, gender: bool, age: Int, exercise: Exercise) {
+        self.weight = weight
+        self.height = height
+        self.gender = gender
+        self.age = age
+        self.Exercise = exercise
+    }
+    
     
 }
