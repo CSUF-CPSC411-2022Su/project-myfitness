@@ -13,7 +13,8 @@ struct ContentView: View {
     @State var weight = ""
     @State var height = ""
     @State var age = ""
-    
+    var info = UserInfo()
+    @State var exercise: Exercise = .littleToNone
     var body: some View {
         VStack {
             TextField("Weight", text: $weight)
@@ -25,8 +26,9 @@ struct ContentView: View {
             TextField("Age", text: $age)
                 .padding()
                 .keyboardType(.decimalPad)
-            //Picker("Gender", selection: $gender) {
-                
+            Picker("Exercise", selection: $exercise) {
+                Text("Little To None").tag(Exercise.littleToNone)
+                Text("Light").tag(Exercise.light)
             }
         }
     }

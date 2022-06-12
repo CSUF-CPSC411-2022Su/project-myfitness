@@ -75,5 +75,13 @@ struct UserInfo{
         self.exercise = exercise
     }
     
+    init(){
+        self.weight = 0
+        self.height = 0
+        self.gender = false
+        self.age = 0
+        self.exercise = .littleToNone
+    }
+    
     
 }
