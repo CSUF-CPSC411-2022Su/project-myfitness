@@ -36,8 +36,11 @@ struct ContentView: View {
                 Text("Active").tag(Exercise.active)
                 Text("Very Active").tag(Exercise.veryActive)
             }
-            .padding()
-            .border(.gray, width: 3)
+            .padding([.trailing, .leading], 20)
+            .overlay(alignment: .bottom){
+                RoundedRectangle(cornerRadius: 16)
+                    .stroke(.blue, lineWidth: 4)
+            }
             .pickerStyle(.menu)
         }
     }
