@@ -11,11 +11,23 @@ import SwiftUI
 
 struct ContentView: View {
     @State var weight = ""
+    @State var height = ""
+    @State var age = ""
+    
     var body: some View {
         VStack {
             TextField("Weight", text: $weight)
                 .padding()
                 .keyboardType(.decimalPad)
+            TextField("Height", text: $height)
+                .padding()
+                .keyboardType(.decimalPad)
+            TextField("Age", text: $age)
+                .padding()
+                .keyboardType(.decimalPad)
+            //Picker("Gender", selection: $gender) {
+                
+            }
         }
     }
 }
