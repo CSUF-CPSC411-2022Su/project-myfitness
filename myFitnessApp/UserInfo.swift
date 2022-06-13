@@ -19,7 +19,7 @@ enum Gender {
     case female
 }
 
-struct UserInfo{
+class UserInfo{
     //TBD
     var weight: Double
     
