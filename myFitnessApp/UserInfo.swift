@@ -13,13 +13,19 @@ enum Exercise {
     case active
     case veryActive
 }
+
+enum Gender {
+    case male
+    case female
+}
+
 struct UserInfo{
     //TBD
     var weight: Double
     
     var height: Double
     
-    var gender: Bool
+    var gender: Gender
     
     var age: Int
     
@@ -28,15 +34,15 @@ struct UserInfo{
     var BMR: Double {
         
         get {
-            if gender {
-                var part1 = 655.1 + (9.563 * weight)
-                var part2 = (1.850 * height)
-                var part3 = (4.676 * Double(age))
+            if gender == .male {
+                let part1 = 655.1 + (9.563 * weight)
+                let part2 = (1.850 * height)
+                let part3 = (4.676 * Double(age))
                 return Double( part1 + part2  - part3 )
             } else {
-                var part1 = 66.47 + (13.75 * weight)
-                var part2 = (5.003 * height)
-                var part3 = (6.755 * Double(age))
+                let part1 = 66.47 + (13.75 * weight)
+                let part2 = (5.003 * height)
+                let part3 = (6.755 * Double(age))
                 return Double(part1 + part2 - part3)
                 
             }
@@ -60,17 +66,15 @@ struct UserInfo{
                     return BMR * 1.725
             case .veryActive:
                     return BMR * 1.9
-            default:
-                return 0.0
             }
         }
         
     }
     
-    init(weight: Double, height: Double, gender: Bool, age: Int, exercise: Exercise) {
+    init(weight: Double, height: Double, gender: Gender, age: Int, exercise: Exercise) {
         self.weight = weight
         self.height = height
-        self.gender = gender
+        self.gender = .male
         self.age = age
         self.exercise = exercise
     }
@@ -78,9 +82,13 @@ struct UserInfo{
     init(){
         self.weight = 0
         self.height = 0
-        self.gender = false
+        self.gender = .male
         self.age = 0
         self.exercise = .littleToNone
+    }
+    
+    func calculateCalorieIntake(){
+        print("work in progress")
     }
     
     
