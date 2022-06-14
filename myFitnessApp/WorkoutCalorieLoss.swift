@@ -15,21 +15,6 @@ class GlobalModel: ObservableObject {
     var time = ""
     var weight = ""
 }
-struct WorkoutView: View {
-    var body: some View {
-        NavigationView {
-            List {
-                NavigationLink(destination: CardioView()) {
-                    Text("Cardio")
-                }
-                NavigationLink(destination: StrengthView()) {
-                    Text("Strength")
-                }
-            }
-            .navigationBarTitle(Text("Choose workout"))
-        }
-    }
-}
 struct CardioView: View {
     @StateObject var global = GlobalModel.global
     @State var isPresenting = false
@@ -49,7 +34,6 @@ struct CardioView: View {
             NavigationLink(destination: CaloriesView(), isActive: $isPresenting) {EmptyView()}
         }
     }
-    
 }
 struct StrengthView: View {
     var body: some View {
@@ -66,8 +50,8 @@ struct StrengthView: View {
                 NavigationLink(destination: LegsView()) {
                     Text("Legs")
                 }
-            }
         }
+    }
 }
 struct CoreView: View {
     @StateObject var global = GlobalModel.global
@@ -136,9 +120,4 @@ struct CaloriesView: View {
         }
     }
     
-}
-struct ConView_Previews: PreviewProvider {
-    static var previews: some View {
-        WorkoutView()
-    }
 }
