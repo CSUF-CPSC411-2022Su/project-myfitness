@@ -9,15 +9,13 @@ import SwiftUI
 
 struct ScrollsView: View {
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false, content: {
-            HStack {
-                ForEach(0..<10) { index in RoundedRectangle(cornerRadius: 25.0)
-                        .fill(Color.green)
-                        .frame(width: 150, height: 150)
-                        .shadow(radius: 10)
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 15) {
+                ForEach(recipes, id: \.title) { recipe in RecipeCard(recipe: recipe)
+                        .shadow(radius: 20)
                         .padding()
                 }
             }
-        })
+        }
     }
 }

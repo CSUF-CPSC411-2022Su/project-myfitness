@@ -23,6 +23,7 @@
 		A04B9D182851477600A7CD5F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A04B9D172851477600A7CD5F /* .gitignore */; };
 		A04B9D1A285147C900A7CD5F /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A04B9D19285147C900A7CD5F /* .gitattributes */; };
 		A04B9D1D28514B5700A7CD5F /* meal_recommendations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9D1C28514B5700A7CD5F /* meal_recommendations.swift */; };
+		A0B8203E285A980B00EECA3A /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B8203D285A980B00EECA3A /* RecipeCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		A04B9D172851477600A7CD5F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A04B9D19285147C900A7CD5F /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		A04B9D1C28514B5700A7CD5F /* meal_recommendations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meal_recommendations.swift; sourceTree = "<group>"; };
+		A0B8203D285A980B00EECA3A /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				A03833BC285834D100220B09 /* MealRecommendationsUI.swift */,
 				A03833C22858480F00220B09 /* SearchView.swift */,
 				A03833C428584BA500220B09 /* RecipeView.swift */,
+				A0B8203D285A980B00EECA3A /* RecipeCard.swift */,
 				A03833C628584CDA00220B09 /* SectionView.swift */,
 				A03833CC2858538000220B09 /* ScrollsView.swift */,
 				A03833CE2858569400220B09 /* FavoriteRecipes.swift */,
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A03833C528584BA500220B09 /* RecipeView.swift in Sources */,
+				A0B8203E285A980B00EECA3A /* RecipeCard.swift in Sources */,
 				A03833CD2858538000220B09 /* ScrollsView.swift in Sources */,
 				A03833C32858480F00220B09 /* SearchView.swift in Sources */,
 				A04B9CF02851471700A7CD5F /* ContentView.swift in Sources */,

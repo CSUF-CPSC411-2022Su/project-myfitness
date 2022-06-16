@@ -14,12 +14,16 @@ struct MealRecommendationsUI: View {
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading, spacing: 14) {
                 Text("Recipes 🥙")
-                    .font(.title)
+                    .font(.largeTitle)
                     .fontWeight(.black)
+                    .padding()
 
                 Text("Great job! What would you like to cook today?")
                     .font(.body)
                     .fontWeight(.bold)
+                
+                //Different views
+                
                 SearchView()
                 
                 RecipeView()
@@ -27,6 +31,7 @@ struct MealRecommendationsUI: View {
                 ScrollsView()
                 
                 FavoriteRecipes()
+                
             }
             .padding()
         }

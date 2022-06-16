@@ -16,9 +16,6 @@ struct SectionView: View {
                 .fontWeight(.bold)
             
             Spacer()
-            
-            Text("See all")
-                .foregroundColor(Color("PrimaryColor"))
         }
     }
 }
