@@ -19,17 +19,17 @@ enum Gender {
     case female
 }
 
-class UserInfo{
+class UserInfo: ObservableObject{
     //TBD
-    var weight: Double
+    @Published var weight: Double
     
-    var height: Double
+    @Published var height: Double
     
-    var gender: Gender
+    @Published var gender: Gender
     
-    var age: Int
+    @Published var age: Int
     
-    var exercise: Exercise
+    @Published var exercise: Exercise
     
     var BMR: Double {
         
@@ -87,8 +87,8 @@ class UserInfo{
         self.exercise = .littleToNone
     }
     
-    func calculateCalorieIntake(){
-        print("work in progress")
+    func calculateCalorieIntake() -> Double{
+        return 0
     }
     
     

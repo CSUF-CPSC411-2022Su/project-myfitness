@@ -9,6 +9,7 @@ import SwiftUI
 import Foundation
 
 struct ContentView: View {
+    @StateObject var userInfo = UserInfo()
     @State var weight = ""
     @State var height = ""
     @State var age = ""
@@ -16,7 +17,6 @@ struct ContentView: View {
     @State var gender: Gender = .male
     var body: some View {
         NavigationView {
-            
             VStack
             {
                 Text("Calorie Intake Calculator")
@@ -56,21 +56,33 @@ struct ContentView: View {
                 .padding([.top, .bottom], 10)
                 .pickerStyle(.segmented)
                 
-                NavigationLink(destination: CalorieCalculatorOutputView())  {
+                NavigationLink(destination: CalorieCalculatorOutputView(userInfo: userInfo))  {
                     Text("Calculate")
-                }
-                        .padding([.trailing, .leading], 40)
+                }.simultaneousGesture(TapGesture().onEnded{
+                    if let validWeight = Double(weight) {
+                        userInfo.weight = validWeight
+                    }
+                    if let validHeight = Double(height) {
+                        userInfo.height = validHeight
+                    }
+                    if let validAge = Int(age) {
+                        userInfo.age = validAge
+                    }
+                    userInfo.gender = gender
+                    userInfo.exercise = exercise
+                    
+                })
             }
 
         }
         
     }
-    func calculateUserInfo() {
+    func calculateUserInfo() -> Double {
         let testHeight = Double(height) ?? 0
         let testWeight = Double(weight) ?? 0
         let testAge = Int(age) ?? 0
         let userInfo: UserInfo = UserInfo(weight: testWeight, height: testHeight, gender: gender, age: testAge, exercise: exercise)
-        userInfo.calculateCalorieIntake()
+        return userInfo.calculateCalorieIntake()
     }
 
 }

@@ -9,14 +9,20 @@ import Foundation
 import SwiftUI
 
 struct CalorieCalculatorOutputView: View {
+    @ObservedObject var userInfo: UserInfo
     var body : some View {
         VStack {
+                Text("Reccomended Calorie Intake: ")
+                .padding()
             HStack {
-                Text("Reccomended Calorie Intake for: ")
-                
+                Text("Maintain Weight:")
+                Text("\(userInfo.BMR) calories/day")
             }
+            .padding()
             HStack {
-                
+                Text("Lose Weight:")
+                let weightlossBMR = userInfo.BMR - 500
+                Text("\(weightlossBMR) calories/day")
             }
         }
     }
