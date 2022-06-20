@@ -56,6 +56,10 @@ struct ContentView: View {
                 
                 NavigationLink(destination: CalorieCalculatorOutputView(userInfo: userInfo))  {
                     Text("Calculate")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(10)
                 }.simultaneousGesture(TapGesture().onEnded{
                     if let validWeight = Double(weight) {
                         userInfo.weight = validWeight
@@ -70,6 +74,7 @@ struct ContentView: View {
                     userInfo.exercise = exercise
                     
                 })
+                
             }.navigationTitle(Text("Input User Info"))
 
         }
