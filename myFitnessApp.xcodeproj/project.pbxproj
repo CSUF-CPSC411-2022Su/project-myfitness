@@ -41,7 +41,7 @@
 /* Begin PBXFileReference section */
 		A04B9CEA2851471700A7CD5F /* myFitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04B9CED2851471700A7CD5F /* myFitnessAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFitnessAppApp.swift; sourceTree = "<group>"; };
-		A04B9CEF2851471700A7CD5F /* CalorieCalculatorInputView */ = {isa = PBXFileReference; lastKnownFileType = text; path = CalorieCalculatorInputView; sourceTree = "<group>"; };
+		A04B9CEF2851471700A7CD5F /* CalorieCalculatorInputView */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = CalorieCalculatorInputView; path = "/Users/dacortez101/Documents/project-myfitness/myFitnessApp/CalorieCalculatorInputView"; sourceTree = "<absolute>"; };
 		A04B9CF12851471800A7CD5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A04B9CF42851471800A7CD5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A04B9CFA2851471900A7CD5F /* myFitnessAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myFitnessAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
