@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A04B9CEE2851471700A7CD5F /* myFitnessAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9CED2851471700A7CD5F /* myFitnessAppApp.swift */; };
-		A04B9CF02851471700A7CD5F /* CalorieCalculatorInputView in Sources */ = {isa = PBXBuildFile; fileRef = A04B9CEF2851471700A7CD5F /* CalorieCalculatorInputView */; };
+		A04B9CF02851471700A7CD5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9CEF2851471700A7CD5F /* ContentView.swift */; };
 		A04B9CF22851471800A7CD5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04B9CF12851471800A7CD5F /* Assets.xcassets */; };
 		A04B9CF52851471800A7CD5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04B9CF42851471800A7CD5F /* Preview Assets.xcassets */; };
 		A04B9CFF2851471900A7CD5F /* myFitnessAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9CFE2851471900A7CD5F /* myFitnessAppTests.swift */; };
@@ -17,7 +17,6 @@
 		A04B9D182851477600A7CD5F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A04B9D172851477600A7CD5F /* .gitignore */; };
 		A04B9D1A285147C900A7CD5F /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A04B9D19285147C900A7CD5F /* .gitattributes */; };
 		C633D2DA2860189B00A70A22 /* CalorieCalculatorOutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C633D2D92860189B00A70A22 /* CalorieCalculatorOutputView.swift */; };
-		C633D2DC2860198A00A70A22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C633D2DB2860198A00A70A22 /* ContentView.swift */; };
 		C63C37DB285521E5005593F3 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63C37DA285521E5005593F3 /* UserInfo.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +40,7 @@
 /* Begin PBXFileReference section */
 		A04B9CEA2851471700A7CD5F /* myFitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04B9CED2851471700A7CD5F /* myFitnessAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFitnessAppApp.swift; sourceTree = "<group>"; };
-		A04B9CEF2851471700A7CD5F /* CalorieCalculatorInputView */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = CalorieCalculatorInputView; path = "/Users/dacortez101/Documents/project-myfitness/myFitnessApp/CalorieCalculatorInputView"; sourceTree = "<absolute>"; };
+		A04B9CEF2851471700A7CD5F /* ContentView.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = ContentView.swift; path = "/Users/dacortez101/Documents/project-myfitness/myFitnessApp/ContentView.swift"; sourceTree = "<absolute>"; };
 		A04B9CF12851471800A7CD5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A04B9CF42851471800A7CD5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A04B9CFA2851471900A7CD5F /* myFitnessAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myFitnessAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,7 +51,6 @@
 		A04B9D172851477600A7CD5F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A04B9D19285147C900A7CD5F /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		C633D2D92860189B00A70A22 /* CalorieCalculatorOutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCalculatorOutputView.swift; sourceTree = "<group>"; };
-		C633D2DB2860198A00A70A22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C63C37DA285521E5005593F3 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,8 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				A04B9CED2851471700A7CD5F /* myFitnessAppApp.swift */,
-				C633D2DB2860198A00A70A22 /* ContentView.swift */,
-				A04B9CEF2851471700A7CD5F /* CalorieCalculatorInputView */,
+				A04B9CEF2851471700A7CD5F /* ContentView.swift */,
 				C633D2D92860189B00A70A22 /* CalorieCalculatorOutputView.swift */,
 				A04B9CF12851471800A7CD5F /* Assets.xcassets */,
 				A04B9CF32851471800A7CD5F /* Preview Content */,
@@ -274,8 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A04B9CF02851471700A7CD5F /* CalorieCalculatorInputView in Sources */,
-				C633D2DC2860198A00A70A22 /* ContentView.swift in Sources */,
+				A04B9CF02851471700A7CD5F /* ContentView.swift in Sources */,
 				C63C37DB285521E5005593F3 /* UserInfo.swift in Sources */,
 				A04B9CEE2851471700A7CD5F /* myFitnessAppApp.swift in Sources */,
 				C633D2DA2860189B00A70A22 /* CalorieCalculatorOutputView.swift in Sources */,
