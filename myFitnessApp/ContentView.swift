@@ -19,8 +19,6 @@ struct ContentView: View {
         NavigationView {
             VStack
             {
-                Text("Calorie Intake Calculator")
-                    .padding()
                 TextField("Weight", text: $weight)
                     .padding()
                     .border(.gray)
@@ -72,7 +70,7 @@ struct ContentView: View {
                     userInfo.exercise = exercise
                     
                 })
-            }
+            }.navigationTitle(Text("Input User Info"))
 
         }
         

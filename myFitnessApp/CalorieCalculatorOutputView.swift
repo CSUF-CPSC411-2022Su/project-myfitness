@@ -20,7 +20,7 @@ struct CalorieCalculatorOutputView: View {
             }
             .padding()
             HStack {
-                Text("Lose Weight:")
+                Text("Lose Weight (~1 pound / week):")
                 let weightlossBMR = userInfo.BMR - 500
                 Text("\(weightlossBMR) calories/day")
             }
