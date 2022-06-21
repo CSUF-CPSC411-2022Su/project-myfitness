@@ -9,15 +9,17 @@ import Foundation
 import SwiftUI
 class GlobalModel: ObservableObject {
     static let global = GlobalModel()
-    var reps = ""
-    var sets = ""
-    var distance = ""
-    var time = ""
-    var weight = ""
+  
+    @Published var reps = ""
+    @Published var sets = ""
+    @Published var distance = ""
+    @Published var time = ""
+    @Published var weight = ""
 }
 struct CardioView: View {
     @StateObject var global = GlobalModel.global
     @State var isPresenting = false
+    //@StateObject weight = userInfo.CalorieCalculatorOutputView()
     var body: some View {
         VStack{
             Text("Awesome job working out!")

@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct WorkoutView: View {
+    @State var reps = ""
+    @State var sets = ""
+    @State var distance = ""
+    @State var time = ""
+    @State var weight = ""
     var body: some View {
         NavigationView {
             List {
