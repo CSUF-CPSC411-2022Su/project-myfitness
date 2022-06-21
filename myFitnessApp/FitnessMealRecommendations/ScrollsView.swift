@@ -7,15 +7,17 @@
 
 import SwiftUI
 
+
 struct ScrollsView: View {
+    var healthy: [Recipe] = recipes
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 15) {
-                ForEach(recipes, id: \.title) { recipe in RecipeCard(recipe: recipe)
-                        .shadow(radius: 20)
-                        .padding()
+            HStack(alignment: .top, spacing: 20) {
+                ForEach(healthy) { recipe in RecipeCardView(recipe: recipe)
                 }
             }
+            .frame(maxWidth: 2000, maxHeight: 640)
+            .padding(.horizontal)
         }
     }
 }

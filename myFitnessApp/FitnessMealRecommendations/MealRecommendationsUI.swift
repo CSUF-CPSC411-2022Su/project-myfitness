@@ -38,6 +38,7 @@ struct MealRecommendationsUI: View {
     }
 }
 
+
 struct MealRecommendationsUI_Previews: PreviewProvider {
     static var previews: some View {
         MealRecommendationsUI()
