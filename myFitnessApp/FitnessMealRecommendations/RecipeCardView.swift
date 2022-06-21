@@ -52,7 +52,6 @@ struct RecipeCardView: View {
                         
                     // @Breif: Cooktime
                     cookingView(recipe: recipe)
-
                 }
                 .padding()
                 .padding(.bottom, 12)
@@ -66,7 +65,6 @@ struct RecipeCardView: View {
                 RecipeDetailsView(recipe: self.recipe)
             }
         }
-
     }
 }
      

@@ -10,19 +10,18 @@ import SwiftUI
 struct SearchView: View {
     @State var search: String = ""
     var body: some View {
-             ZStack {
-                 Rectangle()
-                     .foregroundColor(Color("Gray"))
-                 HStack {
-                     Image(systemName: "magnifyingglass")
-                     TextField("Search for recipes ..", text: $search)
-                 }
-                 .foregroundColor(.green)
-                 .padding(.leading, 13)
-             }
-                 .frame(height: 40)
-                 .cornerRadius(13)
-                 .padding()
-         }
+        ZStack {
+            Rectangle()
+                .foregroundColor(Color("Gray"))
+            HStack {
+                Image(systemName: "magnifyingglass")
+                TextField("Search for recipes ..", text: $search)
+            }
+            .foregroundColor(.green)
+            .padding(.leading, 13)
+        }
+        .frame(height: 40)
+        .cornerRadius(13)
+        .padding()
+    }
 }
-

@@ -12,8 +12,7 @@ struct RecipeView: View {
         VStack(alignment: .leading, spacing: 16) {
             SectionView(title: "Recommended Recipes 👨‍🍳")
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 16) {
-                }
+                HStack(spacing: 16) {}
             }
         }
     }

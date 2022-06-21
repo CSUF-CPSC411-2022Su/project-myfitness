@@ -21,23 +21,21 @@ struct MealRecommendationsUI: View {
                 Text("Great job! What would you like to cook today?")
                     .font(.body)
                     .fontWeight(.bold)
-                
-                //Different views
-                
+
+                // Different views
+
                 SearchView()
-                
+
                 RecipeView()
-                
+
                 ScrollsView()
-                
+
                 FavoriteRecipes()
-                
             }
             .padding()
         }
     }
 }
-
 
 struct MealRecommendationsUI_Previews: PreviewProvider {
     static var previews: some View {

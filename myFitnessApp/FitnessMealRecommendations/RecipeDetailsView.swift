@@ -17,20 +17,20 @@ struct RecipeDetailsView: View {
                     .scaledToFit()
                 
                 Group {
-                    //@Breif: Title
+                    // @Breif: Title
                     Text(recipe.title)
                         .font(.system(.largeTitle, design: .serif))
                         .bold()
                         .multilineTextAlignment(.center)
                         .padding(.top, 10)
                     
-                    //@Breif: Rating
+                    // @Breif: Rating
                     RecipeRating(recipe: recipe)
                     
-                    //@Breif: Cook Time
+                    // @Breif: Cook Time
                     cookingView(recipe: recipe)
                     
-                    //@Breif: Ingrediants
+                    // @Breif: Ingrediants
                     Text("Ingrediants")
                         .font(.system(.title3, design: .serif))
                         .fontWeight(.semibold)
@@ -47,11 +47,10 @@ struct RecipeDetailsView: View {
                         }
                     }
                     
-                    //@Breif: Instructions
+                    // @Breif: Instructions
                     Text("Instructions")
                         .font(.system(.title3, design: .serif))
                         .fontWeight(.semibold)
-                    
                     
                     VStack(alignment: .leading, spacing: 5) {
                         ForEach(recipe.instructions, id: \.self) {

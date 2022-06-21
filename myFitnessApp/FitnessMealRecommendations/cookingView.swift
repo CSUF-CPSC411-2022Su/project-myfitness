@@ -17,7 +17,7 @@ struct cookingView: View {
                 Text("Prep time: \(recipe.prep_time)")
                     .font(.system(.body, design: .serif))
             }
-            
+
             HStack(alignment: .center, spacing: 12) {
                 Image(systemName: "flame")
                     .foregroundColor(.red)

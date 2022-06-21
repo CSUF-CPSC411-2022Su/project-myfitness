@@ -14,7 +14,7 @@ struct SectionView: View {
             Text(title)
                 .font(.title2)
                 .fontWeight(.bold)
-            
+
             Spacer()
         }
     }

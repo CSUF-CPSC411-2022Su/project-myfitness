@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct ScrollsView: View {
     var healthy: [Recipe] = recipes
     var body: some View {

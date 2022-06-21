@@ -13,9 +13,9 @@ struct FavoriteRecipes: View {
             Text("Favorites ❤️")
                 .font(.title2)
                 .fontWeight(.bold)
-            
+
             Spacer()
-            
+
             Text("See all")
                 .foregroundColor(Color("PrimaryColor"))
         }
