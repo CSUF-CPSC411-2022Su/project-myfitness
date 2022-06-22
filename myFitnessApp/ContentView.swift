@@ -9,6 +9,12 @@ import SwiftUI
 import Foundation
 
 struct ContentView: View {
+    var body: some View {
+        CalorieCalculatorInput()
+    }
+}
+
+struct CalorieCalculatorInput: View {
     @StateObject var userInfo = UserInfo()
     @State var weight = ""
     @State var height = ""
@@ -19,31 +25,43 @@ struct ContentView: View {
         NavigationView {
             VStack
             {
-                TextField("Weight", text: $weight)
-                    .padding()
-                    .border(.gray)
-                    .keyboardType(.decimalPad)
-                TextField("Height", text: $height)
-                    .padding()
-                    .border(.gray)
-                    .keyboardType(.decimalPad)
-                TextField("Age", text: $age)
-                    .padding()
-                    .border(.gray)
-                    .keyboardType(.decimalPad)
-                Picker("Exercise", selection: $exercise) {
-                    Text("Little To None").tag(Exercise.littleToNone)
-                    Text("Light").tag(Exercise.light)
-                    Text("Moderate").tag(Exercise.moderate)
-                    Text("Active").tag(Exercise.active)
-                    Text("Very Active").tag(Exercise.veryActive)
+                HStack {
+                    Text("Weight:")
+                    TextField("Weight in TBD", text: $weight)
+                        .padding()
+                        .border(.gray)
+                        .keyboardType(.decimalPad)
+                }
+                HStack {
+                    Text("Height:")
+                    TextField("Height in TBD", text: $height)
+                        .padding()
+                        .border(.gray)
+                        .keyboardType(.decimalPad)
+                }
+                HStack {
+                    Text("Age:")
+                    TextField("Age in Years", text: $age)
+                        .padding()
+                        .border(.gray)
+                        .keyboardType(.decimalPad)
+                }
+                HStack {
+                    Text("Activity:")
+                    Picker("Exercise", selection: $exercise) {
+                        Text("Little To None").tag(Exercise.littleToNone)
+                        Text("Light").tag(Exercise.light)
+                        Text("Moderate").tag(Exercise.moderate)
+                        Text("Active").tag(Exercise.active)
+                        Text("Very Active").tag(Exercise.veryActive)
+                }
+                    .padding(10)
+                    .overlay(alignment: .leading){
+                        RoundedRectangle(cornerRadius: 16)
+                            .stroke(.gray, lineWidth: 1)
                     
                 }
-                .padding([.trailing, .leading], 800)
-                .padding([.top, .bottom], 10)
-                .overlay(alignment: .leading){
-                    RoundedRectangle(cornerRadius: 16)
-                        .stroke(.gray, lineWidth: 1)
+               
                 }
                 .pickerStyle(.menu)
                 Picker("Gender", selection: $gender) {
