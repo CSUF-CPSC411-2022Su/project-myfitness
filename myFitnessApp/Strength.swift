@@ -18,21 +18,16 @@ struct StrengthView: View {
                         .resizable()
                         .scaledToFit()
                 }
-              
-                NavigationLink(destination: ArmsView()) {
+                NavigationLink(destination: UpperBodyView()) {
                     Image("upperbody2")
                         .resizable()
                         .scaledToFit()
                         }
-                
-                
-                NavigationLink(destination: LegsView()) {
+                NavigationLink(destination: LowerBodyView()) {
                     Image("lowerbody")
                         .resizable()
                         .scaledToFit()
-                            
                 }
-                
             }
         }//End of Navigation view
         .background(

@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7A13401A28514D50009527E2 /* WorkoutCalorieLoss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13401928514D50009527E2 /* WorkoutCalorieLoss.swift */; };
+		7AA810F82867B72900197E0A /* Strength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA810F72867B72900197E0A /* Strength.swift */; };
+		7ACCC6572868D81500AAE976 /* WorkoutModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC6562868D81500AAE976 /* WorkoutModifiers.swift */; };
+		7ACCC6592868D8E700AAE976 /* Cardio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC6582868D8E700AAE976 /* Cardio.swift */; };
+		7ACCC65B2869199500AAE976 /* UpperBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC65A2869199500AAE976 /* UpperBodyView.swift */; };
+		7ACCC65D286919B400AAE976 /* LowerBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC65C286919B400AAE976 /* LowerBodyView.swift */; };
+		7ACCC65F286919C800AAE976 /* CoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC65E286919C800AAE976 /* CoreView.swift */; };
+		7ADFDCDB28677850004E885A /* WorkoutUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFDCDA28677850004E885A /* WorkoutUI.swift */; };
 		A04B9CEE2851471700A7CD5F /* myFitnessAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9CED2851471700A7CD5F /* myFitnessAppApp.swift */; };
 		A04B9CF02851471700A7CD5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9CEF2851471700A7CD5F /* ContentView.swift */; };
 		A04B9CF22851471800A7CD5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04B9CF12851471800A7CD5F /* Assets.xcassets */; };
@@ -38,6 +45,13 @@
 
 /* Begin PBXFileReference section */
 		7A13401928514D50009527E2 /* WorkoutCalorieLoss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCalorieLoss.swift; sourceTree = "<group>"; };
+		7AA810F72867B72900197E0A /* Strength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strength.swift; sourceTree = "<group>"; };
+		7ACCC6562868D81500AAE976 /* WorkoutModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModifiers.swift; sourceTree = "<group>"; };
+		7ACCC6582868D8E700AAE976 /* Cardio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardio.swift; sourceTree = "<group>"; };
+		7ACCC65A2869199500AAE976 /* UpperBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperBodyView.swift; sourceTree = "<group>"; };
+		7ACCC65C286919B400AAE976 /* LowerBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowerBodyView.swift; sourceTree = "<group>"; };
+		7ACCC65E286919C800AAE976 /* CoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreView.swift; sourceTree = "<group>"; };
+		7ADFDCDA28677850004E885A /* WorkoutUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutUI.swift; sourceTree = "<group>"; };
 		A04B9CEA2851471700A7CD5F /* myFitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04B9CED2851471700A7CD5F /* myFitnessAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFitnessAppApp.swift; sourceTree = "<group>"; };
 		A04B9CEF2851471700A7CD5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,10 +117,16 @@
 			isa = PBXGroup;
 			children = (
 				A04B9CED2851471700A7CD5F /* myFitnessAppApp.swift */,
+				7ADFDCDA28677850004E885A /* WorkoutUI.swift */,
+				7ACCC6562868D81500AAE976 /* WorkoutModifiers.swift */,
 				A04B9CEF2851471700A7CD5F /* ContentView.swift */,
+				7AA810F72867B72900197E0A /* Strength.swift */,
+				7ACCC6582868D8E700AAE976 /* Cardio.swift */,
+				7ACCC65C286919B400AAE976 /* LowerBodyView.swift */,
+				7ACCC65A2869199500AAE976 /* UpperBodyView.swift */,
+				7ACCC65E286919C800AAE976 /* CoreView.swift */,
 				A04B9CF12851471800A7CD5F /* Assets.xcassets */,
 				A04B9CF32851471800A7CD5F /* Preview Content */,
-				7A13401928514D50009527E2 /* WorkoutCalorieLoss.swift */,
 			);
 			path = myFitnessApp;
 			sourceTree = "<group>";
@@ -114,6 +134,7 @@
 		A04B9CF32851471800A7CD5F /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				7A13401928514D50009527E2 /* WorkoutCalorieLoss.swift */,
 				A04B9CF42851471800A7CD5F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -271,6 +292,13 @@
 				7A13401A28514D50009527E2 /* WorkoutCalorieLoss.swift in Sources */,
 				A04B9CF02851471700A7CD5F /* ContentView.swift in Sources */,
 				A04B9CEE2851471700A7CD5F /* myFitnessAppApp.swift in Sources */,
+				7ACCC65B2869199500AAE976 /* UpperBodyView.swift in Sources */,
+				7ACCC6592868D8E700AAE976 /* Cardio.swift in Sources */,
+				7ACCC65D286919B400AAE976 /* LowerBodyView.swift in Sources */,
+				7AA810F82867B72900197E0A /* Strength.swift in Sources */,
+				7ACCC65F286919C800AAE976 /* CoreView.swift in Sources */,
+				7ACCC6572868D81500AAE976 /* WorkoutModifiers.swift in Sources */,
+				7ADFDCDB28677850004E885A /* WorkoutUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"myFitnessApp/Preview Content\"";
-				DEVELOPMENT_TEAM = TU24D8HEB3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -458,7 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"myFitnessApp/Preview Content\"";
-				DEVELOPMENT_TEAM = TU24D8HEB3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

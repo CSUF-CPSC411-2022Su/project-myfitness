@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct WorkoutView: View {
+struct WorkoutUI: View {
     //@State var reps = ""
     //@State var sets = ""
     //@State var distance = ""
@@ -16,31 +16,55 @@ struct WorkoutView: View {
     //@State var weight = ""
     var body: some View {
         GeometryReader { geometry in
-        NavigationView {
-            VStack{
-                Text("Choose Your Workout")
-                    //.modifier(TitleText())
-            Image("fitness1")
-                .resizable()
-                .scaledToFit()
-                
-            HStack {
-                NavigationLink(destination: CardioView()) {
-                    Text("Cardio")
-                }
-                NavigationLink(destination: StrengthView()) {
-                    Text("Strength")
-                }
-            }
-            //.navigationBarTitle(Text("Choose workout"))
-            }//
-        }.frame(height: geometry.size.height / 2)
-        } ///
+            NavigationView {
+                ZStack {
+                    VStack {
+                        Spacer()
+                        VStack {
+                            Text("Choose Your Workout")
+                                .modifier(TitleText())
+                        }
+                        VStack {
+                            Image("fitness1")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width:300, height: 300)
+                                //.padding(.top, -200)
+                        }
+                        HStack {
+                            //Button(action)
+                            NavigationLink(destination: CardioView()) {
+                                Text("Cardio")
+                                    .modifier(NavModifiers())
+                            }
+                            NavigationLink(destination: StrengthView()) {
+                                Text("Strength")
+                                    .modifier(NavModifiers())
+                            }
+                        }//.frame(width: .infinity, height: geometry.size.height / 2)
+                        VStack {
+                            Image("fitness2")
+                                .resizable()
+                                .scaledToFit()
+                                .clipShape(Circle())
+                        }
+                    }
+                }//End of ZStack
+                .background(
+                       Image("green")
+                           .resizable()
+                           .edgesIgnoringSafeArea(.all)
+                           .frame(width: 450, height: 850)
+               )
+            }//End of Navigation
+        }//End of GeometryReader
+    }//End of body View
+}//End of View struct
+struct WorkoutUI_Previews: PreviewProvider {
+    static var previews: some View {
+        WorkoutUI()
+            .previewInterfaceOrientation(.portrait)
     }
 }
 
-struct WorkoutUI_Previews: PreviewProvider {
-    static var previews: some View {
-        WorkoutView()
-    }
-}
+

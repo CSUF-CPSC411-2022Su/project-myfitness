@@ -15,6 +15,20 @@ struct TitleText: ViewModifier {
             .foregroundColor(Color.white)
     }
 }
+struct OtherText: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.largeTitle)
+            .foregroundColor(Color.black)
+    }
+}
+struct RegularText: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            //.font(.caption)
+            .foregroundColor(Color.black)
+    }
+}
 struct NavModifiers: ViewModifier {
     func body(content: Content) -> some View {
         content

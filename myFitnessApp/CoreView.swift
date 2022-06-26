@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Swift UI
+import SwiftUI
 
 struct CoreView: View {
     @StateObject var global = GlobalModel.global
@@ -17,15 +17,15 @@ struct CoreView: View {
                 VStack{
                     ScrollView(.horizontal) {
                         HStack {
-                            Image("fitness2")
+                            Image("core1")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height:400)
-                            Image("fitness2")
+                            Image("core2")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height:400)
-                            Image("fitness2")
+                            Image("core3")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height:400)

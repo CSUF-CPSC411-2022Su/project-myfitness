@@ -20,23 +20,27 @@ struct CardioView: View {
                         .modifier(OtherText())
                         .padding()
                     Text("Input the distance and time of cardio workout as well as weight to calculate calories lost")
+                        .modifier(RegularText())
                         .padding()
                     VStack {
                         Text("Enter the distance: ")
+                            .modifier(RegularText())
                         TextField("Distance", text: $global.distance)
                             .multilineTextAlignment(.center)
                             .padding()
                         //let reps = Int($global.reps.text!) ?? 0
-                    }
+                    }//End of Distance VStack
                     VStack {
                         Text("Enter time to complete exercise")
+                            .modifier(RegularText())
                         TextField("Time", text: $global.time)
                             .multilineTextAlignment(.center)
                             .padding()
-                    }
+                    }//End of time VStack
                     VStack {
-                        Text("Enter time to complete exercise")
-                        TextField("Time", text: $global.weight)
+                        Text("Enter weight to complete exercise")
+                            .modifier(RegularText())
+                        TextField("Weight", text: $global.weight)
                             .multilineTextAlignment(.center)
                             .padding()
                     }
@@ -47,7 +51,7 @@ struct CardioView: View {
                     }.modifier(OtherText())
                     Spacer()
                     NavigationLink(destination: CaloriesView(), isActive: $isPresenting) {EmptyView()}
-                }
+                }//End of VStack
             }//End of ZStack
             .background(
                    Image("green2")
