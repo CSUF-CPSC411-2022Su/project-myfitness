@@ -6,7 +6,7 @@
 //
 
 import Foundation
-enum Exercise {
+enum Exercise: String, CaseIterable {
     case littleToNone
     case light
     case moderate
@@ -14,7 +14,7 @@ enum Exercise {
     case veryActive
 }
 
-enum Gender {
+enum Gender: String, CaseIterable {
     case male
     case female
 }

@@ -16,11 +16,11 @@ struct ContentView: View {
 
 struct CalorieCalculatorInput: View {
     @StateObject var userInfo = UserInfo()
-    @State var weight = ""
-    @State var height = ""
-    @State var age = ""
-    @State var exercise: Exercise = .littleToNone
-    @State var gender: Gender = .male
+    @AppStorage ("weight") var weight = ""
+    @AppStorage ("height") var height = ""
+    @AppStorage ("age") var age = ""
+    @AppStorage ("exercise") var exercise: Exercise = .littleToNone
+    @AppStorage ("gender") var gender: Gender = .male
     var body: some View {
         NavigationView {
             VStack {

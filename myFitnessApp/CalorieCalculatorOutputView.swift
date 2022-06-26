@@ -14,11 +14,11 @@ struct CalorieCalculatorOutputView: View {
         VStack {
             List {
                 Section ("Maintain Weight") {
-                    Text("\(userInfo.BMR) calories/day")
+                    Text("\(Int(userInfo.BMR)) calories/day")
                 }
                 Section ("Lose Weight (~1 pound / week)"){
                     let weightlossBMR = userInfo.BMR - 500
-                    Text("\(weightlossBMR) calories/day")
+                    Text("\(Int(weightlossBMR)) calories/day")
                 }
             }
             
