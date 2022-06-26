@@ -9,45 +9,38 @@ import Foundation
 import SwiftUI
 struct StrengthView: View {
     var body: some View {
-        NavigationView {
+        ZStack{
             VStack {
                 (Text("Choose strength workout"))
+                    .modifier(OtherText())
                 NavigationLink(destination: CoreView()) {
-                    Image("abs")
+                    Image("core")
                         .resizable()
                         .scaledToFit()
                 }
-                ScrollView {
-                    HStack {
-                        NavigationLink(destination: ArmsView()) {
-                            Image("abs")
-                                .resizable()
-                                .scaledToFit()
-                            Image("abs")
-                                .resizable()
-                                .scaledToFit()
-                            Image("abs")
-                                .resizable()
-                                .scaledToFit()
-                            Image("abs")
-                                .resizable()
-                                .scaledToFit()
-                            
-                        
-                    }
               
-                }
-                }
-                ScrollView {
-                    HStack {
+                NavigationLink(destination: ArmsView()) {
+                    Image("upperbody2")
+                        .resizable()
+                        .scaledToFit()
+                        }
+                
+                
                 NavigationLink(destination: LegsView()) {
-                    Text("Legs")
-                }
-                }
+                    Image("lowerbody")
+                        .resizable()
+                        .scaledToFit()
+                            
                 }
                 
             }
         }//End of Navigation view
+        .background(
+               Image("green3")
+                   .resizable()
+                   .edgesIgnoringSafeArea(.all)
+                   .frame(width: 450, height: 850)
+               )
     }//End of body View
 }//End of View struct
 struct Strength_Previews: PreviewProvider {
