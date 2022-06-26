@@ -59,7 +59,8 @@ struct CalorieCalculatorInput: View {
                     .navigationBarTitleDisplayMode(.inline)){
                     Text("Calculate")
                         .foregroundColor(.white)
-                        .padding()
+                        .padding([.leading, .trailing], 50)
+                        .padding([.top, .bottom], 10)
                         .background(Color.blue)
                         .cornerRadius(10)
                 }.simultaneousGesture(TapGesture().onEnded{
@@ -76,9 +77,8 @@ struct CalorieCalculatorInput: View {
                     userInfo.exercise = exercise
                     
                 })
-                Spacer()
 
-            }.navigationTitle(Text("Input User Info"))
+            }.navigationTitle(Text("User Info"))
             
            
             }
