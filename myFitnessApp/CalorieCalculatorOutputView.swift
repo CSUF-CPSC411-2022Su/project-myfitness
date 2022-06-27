@@ -25,7 +25,7 @@ struct CalorieCalculatorOutputView: View {
                         
                     }
         }.background(
-            Image("green2")
+            Image("green3")
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
                 .frame(width: 450, height: 850)
