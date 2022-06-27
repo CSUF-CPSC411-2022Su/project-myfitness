@@ -1,34 +1,34 @@
 //
-//  RecipeDetailsView.swift
+//  DrinkDetailsView.swift
 //  myFitnessApp
 //
-//  Created by Luis Alvarado on 6/19/22.
+//  Created by Luis Alvarado on 6/24/22.
 //
 
 import SwiftUI
 
-struct RecipeDetailsView: View {
-    var recipe: Recipe
+struct DrinkDetailsView: View {
+    var drinkss: Drinks
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 0) {
-                Image(recipe.image)
+                Image(drinkss.image)
                     .resizable()
                     .scaledToFit()
                 
                 Group {
                     // @Breif: Title
-                    Text(recipe.title)
+                    Text(drinkss.title)
                         .font(.system(.largeTitle, design: .serif))
                         .bold()
                         .multilineTextAlignment(.center)
                         .padding(.top, 10)
                     
                     // @Breif: Rating
-                    RecipeRating(recipe: recipe)
+                    DrinkRating(drink: drinkss)
                     
                     // @Breif: Cook Time
-                    cookingView(recipe: recipe)
+                    DrinkPrep(ddrink: drinkss)
                     
                     // @Breif: Ingrediants
                     Text("Ingrediants")
@@ -36,7 +36,7 @@ struct RecipeDetailsView: View {
                         .fontWeight(.semibold)
                     
                     VStack(alignment: .leading, spacing: 5) {
-                        ForEach(recipe.ingrediants, id: \.self) {
+                        ForEach(drinkss.ingrediants, id: \.self) {
                             item in
                             VStack {
                                 Text(item)
@@ -53,7 +53,7 @@ struct RecipeDetailsView: View {
                         .fontWeight(.semibold)
                     
                     VStack(alignment: .leading, spacing: 5) {
-                        ForEach(recipe.instructions, id: \.self) {
+                        ForEach(drinkss.instructions, id: \.self) {
                             items in
                             VStack {
                                 Text(items)
@@ -74,11 +74,11 @@ struct RecipeDetailsView: View {
                 .edgesIgnoringSafeArea(.all)
                 .frame(width:450, height: 850))
         .edgesIgnoringSafeArea(.top)
+        .edgesIgnoringSafeArea(.top)
     }
 }
-
-struct RecipeDetailsView_Previews: PreviewProvider {
+struct DrinkDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeDetailsView(recipe: recipes[0])
+        DrinkDetailsView(drinkss: Drink[0])
     }
 }

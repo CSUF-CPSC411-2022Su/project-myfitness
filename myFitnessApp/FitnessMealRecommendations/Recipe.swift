@@ -9,11 +9,6 @@ import Foundation
 import SwiftUI
 
 struct Recipe: Identifiable {
-    // Things that need to be added to Feature 3:
-    // 1. look for an API that has recipes that are healthy.
-    // 2. Create a view controller and start to design how you want viewcontroller to look like. [DONE]
-    // 3. Implement functions that will help with feature and write comments as you go to make sure you understand what is happening in the code.
-    // 4. Unit testing once functions are created to ensure feature is working correctly.
     var id = UUID()
     
     // @Breif: Will contain the image of the recipe
@@ -166,4 +161,52 @@ var recipes = [
                          "2 tsp raw honey",
                          "2 tsp seeded mustard",
                          "salt and pepper to taste"]),
-]
+    
+    // Quinoa Bowel
+    Recipe(image: "Quinoa",
+           title: "Quinoa Bowl",
+           information: "Quinoa bowls are a great catch-all, an easy way to turn what you’ve got around into a healthy, filling meal. Plus, our quinoa bowl sauce—a super savory, creamy, plant-based dressing made with edamame, garbanzo beans and nutritional yeast—really ties everything together.", rating: 5,
+           difficulty: "Medium",
+           prep_time: "20 MIN",
+           cooktime: "25 MIN",
+           instructions: [
+               "Here’s how to make a delicious quinoa bowl:",
+               "1) Cook quinoa. If you buy from the bulk bins, you should rinse the quinoa before boiling. A lot of boxed quinoa brands are “pre-rinsed”.",
+               "2)While the quinoa simmers, prep the toppings and the dressing!",
+               "3) Dressing: dump all of the quinoa bowl dressing ingredients into a blender (or use an immersion blender) and blend until the sauce is smooth and creamy.",
+               "4)Assemble your quinoa bowls! Oh right—another awesome thing about doing quinoa bowls for dinner is that they’re naturally customizable. If you’ve got picky eaters in the house, try laying out all of the various topping options and letting everyone just assemble their bowls as they please. If you leave the chicken off, suddenly you’ve got a vegan quinoa bowl! If you were to top the bowl with nothing BUT chicken and dressing, you’d still be able to call that a pretty healthy dinner. In other words, everybody wins!"
+           ],
+           ingrediants: ["1 cup of quinoa (red, white or mixed), rinsed",
+                         "2 cups of vegetable or chicken stock",
+                         "cilantro",
+                         "grated carrots",
+                         "cherry tomatoes",
+                         "avocado",
+                         "black beans, rinsed",
+                         "cooked, shredded chicken (leave out if vegan)",
+                         "brussel sprouts, shredded"]),
+    
+    //Stir FRY
+    Recipe(image: "Stir", title: "Beef Stir Fry", information: "Easy Beef Stir Fry is the perfect Chinese-restaurant-inspired dish that you can make at home. To get delicious flavor use lots of been, your favorite vegetables, and of course a great sauce.", rating: 5, difficulty: "HARD", prep_time: "20 MIN", cooktime: "30 MIN",
+        instructions: [
+        "1) Season steak with salt & pepper. Toss with cornstarch and set aside while you prepare the vegetables.",
+        "2) Place 1 tablespoon of oil in a pan or wok. Cook the beef in 2 small batches over medium high until browned, about 2-3 minutes (beef does not need to be cooked through). Remove from pan and set aside.",
+        "3) Add vegetables to the pan and cook about until tender crisp, 4-5 minutes. Remove from pan and set aside with the beef.",
+        "4) Combine sauce ingredients except corn starch in a bowl and stir well.",
+        "5)Turn the heat up to medium-high and add the sauce. Bring to a simmer. Combine cornstarch with 3 tablespoons water (or broth) and add it the sauce a little bit at a time while whisking to reach desired consistency. Let simmer 2 minutes. Add vegetables, beef (and any juices) to the pan and cook until heated through.",
+        "6)Serve with noodles or over rice."],
+        ingrediants: [
+                      "2 tablespoons vegetable oil divided",
+                      "1 pound flank steak thinly sliced",
+                      "2 tablespoons cornstarch",
+                      "4 cups mixed vegetables",
+                      "SAUCE",
+                      "3 cloves garlic minced",
+                      "1 teaspoon minced ginger",
+                      "⅓ cup orange juice",
+                      "⅓ cup water",
+                      "¼ cup low sodium soy sauce",
+                      "3 tablespoons brown sugar",
+                      "1 ½ teaspoons sesame oil",
+                      "1 tablespoon cornstarch"])
+        ]

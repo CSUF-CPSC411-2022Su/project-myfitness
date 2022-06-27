@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SearchView: View {
     @State var search: String = ""
+    let list = [recipes]
+    
     var body: some View {
         ZStack {
             Rectangle()
@@ -16,6 +18,7 @@ struct SearchView: View {
             HStack {
                 Image(systemName: "magnifyingglass")
                 TextField("Search for recipes ..", text: $search)
+                    .searchable(text: $search)
             }
             .foregroundColor(.green)
             .padding(.leading, 13)

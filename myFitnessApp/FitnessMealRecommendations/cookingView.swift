@@ -28,6 +28,26 @@ struct cookingView: View {
     }
 }
 
+struct DrinkPrep: View {
+    var ddrink: Drinks
+    var body: some View {
+        HStack(alignment: .center, spacing: 12) {
+            HStack(alignment: .center, spacing: 2) {
+                Image(systemName: "clock")
+                    .foregroundColor(.blue)
+                Text("Prep time: \(ddrink.prep_time)")
+                    .font(.system(.body, design: .serif))
+            }
+            HStack(alignment: .center, spacing: 12) {
+                Image(systemName: "flame")
+                    .foregroundColor(.red)
+                Text("Calories: \(ddrink.calories)")
+                    .font(.system(.body, design: .serif))
+            }
+        }
+    }
+}
+
 struct cookingView_Previews: PreviewProvider {
     static var previews: some View {
         cookingView(recipe: recipes[0])

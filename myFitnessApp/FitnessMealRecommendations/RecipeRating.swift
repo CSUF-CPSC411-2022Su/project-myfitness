@@ -13,7 +13,19 @@ struct RecipeRating: View {
         HStack(alignment: .center, spacing: 5) {
             ForEach(1 ... (recipe.rating), id: \.self) { _ in
                 Image(systemName: "star.fill")
-                    .foregroundColor(Color.green)
+                    .foregroundColor(Color.yellow)
+            }
+        }
+    }
+}
+
+struct DrinkRating: View {
+    var drink: Drinks
+    var body: some View {
+        HStack(alignment: .center, spacing: 5) {
+            ForEach(1 ... (drink.rating), id: \.self) { _ in
+                Image(systemName: "star.fill")
+                    .foregroundColor(Color.yellow)
             }
         }
     }

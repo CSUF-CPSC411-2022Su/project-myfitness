@@ -26,7 +26,11 @@
 		A04B9D0B2851471900A7CD5F /* myFitnessAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9D0A2851471900A7CD5F /* myFitnessAppUITestsLaunchTests.swift */; };
 		A04B9D182851477600A7CD5F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A04B9D172851477600A7CD5F /* .gitignore */; };
 		A04B9D1A285147C900A7CD5F /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A04B9D19285147C900A7CD5F /* .gitattributes */; };
-		A04B9D1D28514B5700A7CD5F /* meal_recommendations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9D1C28514B5700A7CD5F /* meal_recommendations.swift */; };
+		A04B9D1D28514B5700A7CD5F /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9D1C28514B5700A7CD5F /* Recipe.swift */; };
+		A0EAB4F128642D6600B383F7 /* DrinkRecommendations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAB4F028642D6600B383F7 /* DrinkRecommendations.swift */; };
+		A0EAB4F32864306500B383F7 /* DrinksCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAB4F22864306500B383F7 /* DrinksCardView.swift */; };
+		A0EAB4F728657E7100B383F7 /* DrinkScrollsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAB4F628657E7100B383F7 /* DrinkScrollsView.swift */; };
+		A0EAB4F92866BAA800B383F7 /* DrinkDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAB4F82866BAA800B383F7 /* DrinkDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +73,11 @@
 		A04B9D0A2851471900A7CD5F /* myFitnessAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFitnessAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A04B9D172851477600A7CD5F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A04B9D19285147C900A7CD5F /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
-		A04B9D1C28514B5700A7CD5F /* meal_recommendations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meal_recommendations.swift; sourceTree = "<group>"; };
+		A04B9D1C28514B5700A7CD5F /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		A0EAB4F028642D6600B383F7 /* DrinkRecommendations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkRecommendations.swift; sourceTree = "<group>"; };
+		A0EAB4F22864306500B383F7 /* DrinksCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksCardView.swift; sourceTree = "<group>"; };
+		A0EAB4F628657E7100B383F7 /* DrinkScrollsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkScrollsView.swift; sourceTree = "<group>"; };
+		A0EAB4F82866BAA800B383F7 /* DrinkDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,16 +167,20 @@
 		A04B9D1B28514A8900A7CD5F /* FitnessMealRecommendations */ = {
 			isa = PBXGroup;
 			children = (
-				A04B9D1C28514B5700A7CD5F /* meal_recommendations.swift */,
 				A03833BC285834D100220B09 /* MealRecommendationsUI.swift */,
+				A04B9D1C28514B5700A7CD5F /* Recipe.swift */,
+				A0EAB4F028642D6600B383F7 /* DrinkRecommendations.swift */,
 				A03833C22858480F00220B09 /* SearchView.swift */,
-				A03833C428584BA500220B09 /* RecipeView.swift */,
 				A0369D10285EEEF1008DD311 /* RecipeCardView.swift */,
-				A0369D16286161A2008DD311 /* cookingView.swift */,
+				A0EAB4F22864306500B383F7 /* DrinksCardView.swift */,
 				A0369D142861607A008DD311 /* RecipeRating.swift */,
+				A03833C428584BA500220B09 /* RecipeView.swift */,
 				A0369D12285F181D008DD311 /* RecipeDetailsView.swift */,
-				A03833C628584CDA00220B09 /* SectionView.swift */,
+				A0EAB4F82866BAA800B383F7 /* DrinkDetailsView.swift */,
+				A0EAB4F628657E7100B383F7 /* DrinkScrollsView.swift */,
 				A03833CC2858538000220B09 /* ScrollsView.swift */,
+				A0369D16286161A2008DD311 /* cookingView.swift */,
+				A03833C628584CDA00220B09 /* SectionView.swift */,
 				A03833CE2858569400220B09 /* FavoriteRecipes.swift */,
 			);
 			path = FitnessMealRecommendations;
@@ -308,15 +320,19 @@
 			files = (
 				A0369D17286161A2008DD311 /* cookingView.swift in Sources */,
 				A03833C528584BA500220B09 /* RecipeView.swift in Sources */,
+				A0EAB4F92866BAA800B383F7 /* DrinkDetailsView.swift in Sources */,
 				A0369D11285EEEF1008DD311 /* RecipeCardView.swift in Sources */,
 				A03833CD2858538000220B09 /* ScrollsView.swift in Sources */,
 				A03833C32858480F00220B09 /* SearchView.swift in Sources */,
 				A04B9CF02851471700A7CD5F /* ContentView.swift in Sources */,
+				A0EAB4F728657E7100B383F7 /* DrinkScrollsView.swift in Sources */,
 				A03833C728584CDA00220B09 /* SectionView.swift in Sources */,
-				A04B9D1D28514B5700A7CD5F /* meal_recommendations.swift in Sources */,
+				A04B9D1D28514B5700A7CD5F /* Recipe.swift in Sources */,
+				A0EAB4F128642D6600B383F7 /* DrinkRecommendations.swift in Sources */,
 				A04B9CEE2851471700A7CD5F /* myFitnessAppApp.swift in Sources */,
 				A03833BD285834D100220B09 /* MealRecommendationsUI.swift in Sources */,
 				A0369D13285F181D008DD311 /* RecipeDetailsView.swift in Sources */,
+				A0EAB4F32864306500B383F7 /* DrinksCardView.swift in Sources */,
 				A0369D152861607A008DD311 /* RecipeRating.swift in Sources */,
 				A03833CF2858569400220B09 /* FavoriteRecipes.swift in Sources */,
 			);

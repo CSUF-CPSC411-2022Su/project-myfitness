@@ -30,15 +30,24 @@ struct MealRecommendationsUI: View {
 
                 ScrollsView()
 
-                FavoriteRecipes()
+                DrinkView()
+
+                DrinkScrollsView()
+
+                //FavoriteRecipes()
             }
             .padding()
-        }
+        }.background(
+            Image("green")
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+                .frame(width: 450, height: 850))
     }
 }
 
 struct MealRecommendationsUI_Previews: PreviewProvider {
     static var previews: some View {
         MealRecommendationsUI()
+            .previewInterfaceOrientation(.portrait)
     }
 }
