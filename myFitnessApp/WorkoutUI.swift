@@ -25,7 +25,7 @@ struct WorkoutUI: View {
                                 .modifier(TitleText())
                         }
                         VStack {
-                            Image("fitness1")
+                            Image("fitness11111")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width:300, height: 300)
@@ -43,7 +43,7 @@ struct WorkoutUI: View {
                             }
                         }//.frame(width: .infinity, height: geometry.size.height / 2)
                         VStack {
-                            Image("fitness2")
+                            Image("fitness22222")
                                 .resizable()
                                 .scaledToFit()
                                 .clipShape(Circle())
@@ -51,10 +51,10 @@ struct WorkoutUI: View {
                     }
                 }//End of ZStack
                 .background(
-                       Image("green")
+                       Image("green11111")
                            .resizable()
                            .edgesIgnoringSafeArea(.all)
-                           .frame(width: 450, height: 850)
+                           .frame(width: 850, height: 850)
                )
             }//End of Navigation
         }//End of GeometryReader

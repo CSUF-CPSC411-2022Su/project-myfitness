@@ -16,23 +16,23 @@ struct UpperBodyView: View {
                 VStack{
                     ScrollView(.horizontal) {
                         HStack {
-                            Image("fitness2")
+                            Image("fitness22222")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height:400)
-                            Image("fitness2")
+                            Image("fitness22222")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height:400)
-                            Image("fitness2")
+                            Image("fitness22222")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height:400)
-                            Image("fitness2")
+                            Image("fitness22222")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height:400)
-                            Image("fitness2")
+                            Image("fitness22222")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height:400)
@@ -62,10 +62,12 @@ struct UpperBodyView: View {
                 }//End of first VStack
             }//End of ZStack
             .background(
-                   Image("green4")
+                   Image("green44444")
                        .resizable()
+                       .aspectRatio(geometry.size, contentMode: .fill)
+                       //.frame(width: 500, height: 850)
                        .edgesIgnoringSafeArea(.all)
-                       .frame(width: 450, height: 850)
+                       .frame(width: 850, height: 850)
                )
         }
     }//End of body View

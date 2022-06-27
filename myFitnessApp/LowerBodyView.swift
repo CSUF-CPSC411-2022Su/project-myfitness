@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+
 struct LowerBodyView: View {
     @StateObject var global = GlobalModel.global
     @State var isPresenting = false
@@ -16,23 +17,23 @@ struct LowerBodyView: View {
                 VStack{
                     ScrollView(.horizontal) {
                         HStack {
-                            Image("fitness2")
+                            Image("fitness22222")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height:400)
-                            Image("fitness2")
+                            Image("fitness22222")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height:400)
-                            Image("fitness2")
+                            Image("fitness22222")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height:400)
-                            Image("fitness2")
+                            Image("fitness22222")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height:400)
-                            Image("fitness2")
+                            Image("fitness22222")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height:400)
@@ -62,10 +63,11 @@ struct LowerBodyView: View {
                 }//End of first VStack
             }//End of ZStack
             .background(
-                   Image("green4")
+                   Image("green44444")
                        .resizable()
+                       .aspectRatio(geometry.size, contentMode: .fill)
                        .edgesIgnoringSafeArea(.all)
-                       .frame(width: 450, height: 850)
+                       .frame(width: 850, height: 850)
                )
         }
     }//End of body View

@@ -17,23 +17,23 @@ struct CoreView: View {
                 VStack{
                     ScrollView(.horizontal) {
                         HStack {
-                            Image("core1")
+                            Image("core11111")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height:400)
-                            Image("core2")
+                            Image("core22222")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height:400)
-                            Image("core3")
+                            Image("core33333")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height:400)
-                            Image("fitness2")
+                            Image("fitness22222")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height:400)
-                            Image("fitness2")
+                            Image("fitness22222")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height:400)
@@ -63,10 +63,11 @@ struct CoreView: View {
                 }//End of first VStack
             }//End of ZStack
             .background(
-                   Image("green4")
+                   Image("green44444")
                        .resizable()
+                       .aspectRatio(geometry.size, contentMode: .fill)
                        .edgesIgnoringSafeArea(.all)
-                       .frame(width: 450, height: 850)
+                       .frame(width: 850, height: 850)
                )
         }
     }//End of body View

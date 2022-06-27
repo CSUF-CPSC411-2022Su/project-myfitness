@@ -18,26 +18,3 @@ class GlobalModel: ObservableObject {
 }
 
 
-
-
-struct CaloriesView: View {
-    var body: some View {
-        ZStack {
-            
-            VStack{
-                Image("youdidit")
-                    .resizable()
-                    .scaledToFit()
-                Text("This is how many calories you lost")
-                    .padding()
-                
-            }
-        }//End of ZStack
-        .background(
-               Image("green5")
-                   .resizable()
-                   .edgesIgnoringSafeArea(.all)
-                   .frame(width: 450, height: 850)
-           )
-    }//End of body View
-}//End of CaloriesView struct

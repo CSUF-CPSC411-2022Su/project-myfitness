@@ -54,7 +54,7 @@ struct CardioView: View {
                 }//End of VStack
             }//End of ZStack
             .background(
-                   Image("green2")
+                   Image("green22222")
                        .resizable()
                        .edgesIgnoringSafeArea(.all)
                        .frame(width: .infinity, height: .infinity)

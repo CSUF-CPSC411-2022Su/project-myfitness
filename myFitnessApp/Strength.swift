@@ -14,24 +14,24 @@ struct StrengthView: View {
                 (Text("Choose strength workout"))
                     .modifier(OtherText())
                 NavigationLink(destination: CoreView()) {
-                    Image("core")
+                    Image("coreeeee")
                         .resizable()
                         .scaledToFit()
                 }
                 NavigationLink(destination: UpperBodyView()) {
-                    Image("upperbody2")
+                    Image("upperbody22222")
                         .resizable()
                         .scaledToFit()
                         }
                 NavigationLink(destination: LowerBodyView()) {
-                    Image("lowerbody")
+                    Image("lowerbody11111")
                         .resizable()
                         .scaledToFit()
                 }
             }
         }//End of Navigation view
         .background(
-               Image("green3")
+               Image("green33333")
                    .resizable()
                    .edgesIgnoringSafeArea(.all)
                    .frame(width: 450, height: 850)

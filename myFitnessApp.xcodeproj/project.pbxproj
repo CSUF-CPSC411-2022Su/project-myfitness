@@ -14,6 +14,7 @@
 		7ACCC65B2869199500AAE976 /* UpperBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC65A2869199500AAE976 /* UpperBodyView.swift */; };
 		7ACCC65D286919B400AAE976 /* LowerBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC65C286919B400AAE976 /* LowerBodyView.swift */; };
 		7ACCC65F286919C800AAE976 /* CoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC65E286919C800AAE976 /* CoreView.swift */; };
+		7ACCC661286A5B1A00AAE976 /* CalorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC660286A5B1A00AAE976 /* CalorieView.swift */; };
 		7ADFDCDB28677850004E885A /* WorkoutUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFDCDA28677850004E885A /* WorkoutUI.swift */; };
 		A04B9CEE2851471700A7CD5F /* myFitnessAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9CED2851471700A7CD5F /* myFitnessAppApp.swift */; };
 		A04B9CF02851471700A7CD5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9CEF2851471700A7CD5F /* ContentView.swift */; };
@@ -51,6 +52,7 @@
 		7ACCC65A2869199500AAE976 /* UpperBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperBodyView.swift; sourceTree = "<group>"; };
 		7ACCC65C286919B400AAE976 /* LowerBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowerBodyView.swift; sourceTree = "<group>"; };
 		7ACCC65E286919C800AAE976 /* CoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreView.swift; sourceTree = "<group>"; };
+		7ACCC660286A5B1A00AAE976 /* CalorieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieView.swift; sourceTree = "<group>"; };
 		7ADFDCDA28677850004E885A /* WorkoutUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutUI.swift; sourceTree = "<group>"; };
 		A04B9CEA2851471700A7CD5F /* myFitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04B9CED2851471700A7CD5F /* myFitnessAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFitnessAppApp.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				A04B9CEF2851471700A7CD5F /* ContentView.swift */,
 				7AA810F72867B72900197E0A /* Strength.swift */,
 				7ACCC6582868D8E700AAE976 /* Cardio.swift */,
+				7ACCC660286A5B1A00AAE976 /* CalorieView.swift */,
 				7ACCC65C286919B400AAE976 /* LowerBodyView.swift */,
 				7ACCC65A2869199500AAE976 /* UpperBodyView.swift */,
 				7ACCC65E286919C800AAE976 /* CoreView.swift */,
@@ -298,6 +301,7 @@
 				7AA810F82867B72900197E0A /* Strength.swift in Sources */,
 				7ACCC65F286919C800AAE976 /* CoreView.swift in Sources */,
 				7ACCC6572868D81500AAE976 /* WorkoutModifiers.swift in Sources */,
+				7ACCC661286A5B1A00AAE976 /* CalorieView.swift in Sources */,
 				7ADFDCDB28677850004E885A /* WorkoutUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
