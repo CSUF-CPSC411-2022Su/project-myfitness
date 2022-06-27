@@ -39,11 +39,11 @@ struct CalorieCalculatorInput: View {
                                         Form
                                         {
                                             Section ("Weight") {
-                                                TextField("Weight in TBD", text: $weight)
+                                                TextField("Weight in kg", text: $weight)
                                                     .keyboardType(.decimalPad)
                                             }
                                             Section ("Height") {
-                                                            TextField("Height in TBD", text: $height)
+                                                            TextField("Height in cm", text: $height)
                                                                 .keyboardType(.decimalPad)
                                                         }
                                                         Section ("Age") {
