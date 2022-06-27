@@ -10,7 +10,7 @@ import Foundation
 
 struct ContentView: View {
     init(){
-        UITableViewCell.appearance().backgroundColor = .clear
+        UITableView.appearance().backgroundColor = .clear
     }
 
     var body: some View {
@@ -35,6 +35,7 @@ struct CalorieCalculatorInput: View {
                                 ZStack
                                 {
                                     VStack {
+                                        
                                         Form
                                         {
                                             Section ("Weight") {
@@ -65,7 +66,6 @@ struct CalorieCalculatorInput: View {
                                                     }.pickerStyle(.segmented)
                                                 }
                                         }
-                                        .background(Color(.systemGroupedBackground))
                                             NavigationLink(destination: CalorieCalculatorOutputView(userInfo: userInfo)
                                                 .navigationTitle(Text("Reccomended Calorie Intake"))
                                                 .navigationBarTitleDisplayMode(.inline)){
@@ -94,12 +94,11 @@ struct CalorieCalculatorInput: View {
                                 
                                
                             
-                        }
-                        .background( Image("green1")
-                            .scaledToFit()
-                            .edgesIgnoringSafeArea(.all)
-                            .frame(width: .infinity, height: .infinity)
-                            )
+                        }.background(
+                            Image("green1")
+                                .resizable()
+                                .edgesIgnoringSafeArea(.all)
+                                .frame(width: 450, height: 850))
                         
                         
                        

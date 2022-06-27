@@ -11,18 +11,26 @@ import SwiftUI
 struct CalorieCalculatorOutputView: View {
     @ObservedObject var userInfo: UserInfo
     var body : some View {
-        VStack {
-            List {
-                Section ("Maintain Weight") {
-                    Text("\(Int(userInfo.BMR)) calories/day")
-                }
-                Section ("Lose Weight (~1 pound / week)"){
-                    let weightlossBMR = userInfo.BMR - 500
-                    Text("\(Int(weightlossBMR)) calories/day")
-                }
-            }
-            
-        }
+        ZStack {
+            VStack {
+                List {
+                            Section ("Maintain Weight") {
+                                Text("\(Int(userInfo.BMR)) calories/day")
+                            }
+                            Section ("Lose Weight (~1 pound / week)"){
+                                let weightlossBMR = userInfo.BMR - 500
+                                Text("\(Int(weightlossBMR)) calories/day")
+                            }
+                        }
+                        
+                    }
+        }.background(
+            Image("green2")
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+                .frame(width: 450, height: 850)
+            )
+        
         
             
        
