@@ -16,8 +16,17 @@
 		7ACCC65F286919C800AAE976 /* CoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC65E286919C800AAE976 /* CoreView.swift */; };
 		7ACCC661286A5B1A00AAE976 /* CalorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC660286A5B1A00AAE976 /* CalorieView.swift */; };
 		7ADFDCDB28677850004E885A /* WorkoutUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFDCDA28677850004E885A /* WorkoutUI.swift */; };
+		A0369D11285EEEF1008DD311 /* RecipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0369D10285EEEF1008DD311 /* RecipeCardView.swift */; };
+		A0369D13285F181D008DD311 /* RecipeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0369D12285F181D008DD311 /* RecipeDetailsView.swift */; };
+		A0369D152861607A008DD311 /* RecipeRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0369D142861607A008DD311 /* RecipeRating.swift */; };
+		A0369D17286161A2008DD311 /* cookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0369D16286161A2008DD311 /* cookingView.swift */; };
+		A03833BD285834D100220B09 /* MealRecommendationsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03833BC285834D100220B09 /* MealRecommendationsUI.swift */; };
+		A03833C32858480F00220B09 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03833C22858480F00220B09 /* SearchView.swift */; };
+		A03833C528584BA500220B09 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03833C428584BA500220B09 /* RecipeView.swift */; };
+		A03833C728584CDA00220B09 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03833C628584CDA00220B09 /* SectionView.swift */; };
+		A03833CD2858538000220B09 /* ScrollsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03833CC2858538000220B09 /* ScrollsView.swift */; };
+		A03833CF2858569400220B09 /* FavoriteRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03833CE2858569400220B09 /* FavoriteRecipes.swift */; };
 		A04B9CEE2851471700A7CD5F /* myFitnessAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9CED2851471700A7CD5F /* myFitnessAppApp.swift */; };
-		A04B9CF02851471700A7CD5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9CEF2851471700A7CD5F /* ContentView.swift */; };
 		A04B9CF22851471800A7CD5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04B9CF12851471800A7CD5F /* Assets.xcassets */; };
 		A04B9CF52851471800A7CD5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04B9CF42851471800A7CD5F /* Preview Assets.xcassets */; };
 		A04B9CFF2851471900A7CD5F /* myFitnessAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9CFE2851471900A7CD5F /* myFitnessAppTests.swift */; };
@@ -25,6 +34,14 @@
 		A04B9D0B2851471900A7CD5F /* myFitnessAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9D0A2851471900A7CD5F /* myFitnessAppUITestsLaunchTests.swift */; };
 		A04B9D182851477600A7CD5F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A04B9D172851477600A7CD5F /* .gitignore */; };
 		A04B9D1A285147C900A7CD5F /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A04B9D19285147C900A7CD5F /* .gitattributes */; };
+		C633D2DA2860189B00A70A22 /* CalorieCalculatorOutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C633D2D92860189B00A70A22 /* CalorieCalculatorOutputView.swift */; };
+		C63C37DB285521E5005593F3 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63C37DA285521E5005593F3 /* UserInfo.swift */; };
+		EC94A26F286A5B5E00517A0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC94A26E286A5B5E00517A0C /* ContentView.swift */; };
+		A04B9D1D28514B5700A7CD5F /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B9D1C28514B5700A7CD5F /* Recipe.swift */; };
+		A0EAB4F128642D6600B383F7 /* DrinkRecommendations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAB4F028642D6600B383F7 /* DrinkRecommendations.swift */; };
+		A0EAB4F32864306500B383F7 /* DrinksCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAB4F22864306500B383F7 /* DrinksCardView.swift */; };
+		A0EAB4F728657E7100B383F7 /* DrinkScrollsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAB4F628657E7100B383F7 /* DrinkScrollsView.swift */; };
+		A0EAB4F92866BAA800B383F7 /* DrinkDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAB4F82866BAA800B383F7 /* DrinkDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +71,18 @@
 		7ACCC65E286919C800AAE976 /* CoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreView.swift; sourceTree = "<group>"; };
 		7ACCC660286A5B1A00AAE976 /* CalorieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieView.swift; sourceTree = "<group>"; };
 		7ADFDCDA28677850004E885A /* WorkoutUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutUI.swift; sourceTree = "<group>"; };
+		A0369D10285EEEF1008DD311 /* RecipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardView.swift; sourceTree = "<group>"; };
+		A0369D12285F181D008DD311 /* RecipeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsView.swift; sourceTree = "<group>"; };
+		A0369D142861607A008DD311 /* RecipeRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRating.swift; sourceTree = "<group>"; };
+		A0369D16286161A2008DD311 /* cookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cookingView.swift; sourceTree = "<group>"; };
+		A03833BC285834D100220B09 /* MealRecommendationsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRecommendationsUI.swift; sourceTree = "<group>"; };
+		A03833C22858480F00220B09 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		A03833C428584BA500220B09 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		A03833C628584CDA00220B09 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		A03833CC2858538000220B09 /* ScrollsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollsView.swift; sourceTree = "<group>"; };
+		A03833CE2858569400220B09 /* FavoriteRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRecipes.swift; sourceTree = "<group>"; };
 		A04B9CEA2851471700A7CD5F /* myFitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04B9CED2851471700A7CD5F /* myFitnessAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFitnessAppApp.swift; sourceTree = "<group>"; };
-		A04B9CEF2851471700A7CD5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A04B9CF12851471800A7CD5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A04B9CF42851471800A7CD5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A04B9CFA2851471900A7CD5F /* myFitnessAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myFitnessAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +92,14 @@
 		A04B9D0A2851471900A7CD5F /* myFitnessAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFitnessAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A04B9D172851477600A7CD5F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A04B9D19285147C900A7CD5F /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		C633D2D92860189B00A70A22 /* CalorieCalculatorOutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCalculatorOutputView.swift; sourceTree = "<group>"; };
+		C63C37DA285521E5005593F3 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		EC94A26E286A5B5E00517A0C /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A04B9D1C28514B5700A7CD5F /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		A0EAB4F028642D6600B383F7 /* DrinkRecommendations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkRecommendations.swift; sourceTree = "<group>"; };
+		A0EAB4F22864306500B383F7 /* DrinksCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksCardView.swift; sourceTree = "<group>"; };
+		A0EAB4F628657E7100B383F7 /* DrinkScrollsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkScrollsView.swift; sourceTree = "<group>"; };
+		A0EAB4F82866BAA800B383F7 /* DrinkDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +152,8 @@
 		A04B9CEC2851471700A7CD5F /* myFitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				EC94A26E286A5B5E00517A0C /* ContentView.swift */,
+				A04B9D1B28514A8900A7CD5F /* FitnessMealRecommendations */,
 				A04B9CED2851471700A7CD5F /* myFitnessAppApp.swift */,
 				7ADFDCDA28677850004E885A /* WorkoutUI.swift */,
 				7ACCC6562868D81500AAE976 /* WorkoutModifiers.swift */,
@@ -128,8 +164,10 @@
 				7ACCC65C286919B400AAE976 /* LowerBodyView.swift */,
 				7ACCC65A2869199500AAE976 /* UpperBodyView.swift */,
 				7ACCC65E286919C800AAE976 /* CoreView.swift */,
+				C633D2D92860189B00A70A22 /* CalorieCalculatorOutputView.swift */,
 				A04B9CF12851471800A7CD5F /* Assets.xcassets */,
 				A04B9CF32851471800A7CD5F /* Preview Content */,
+				C63C37DA285521E5005593F3 /* UserInfo.swift */,
 			);
 			path = myFitnessApp;
 			sourceTree = "<group>";
@@ -158,6 +196,28 @@
 				A04B9D0A2851471900A7CD5F /* myFitnessAppUITestsLaunchTests.swift */,
 			);
 			path = myFitnessAppUITests;
+			sourceTree = "<group>";
+		};
+		A04B9D1B28514A8900A7CD5F /* FitnessMealRecommendations */ = {
+			isa = PBXGroup;
+			children = (
+				A03833BC285834D100220B09 /* MealRecommendationsUI.swift */,
+				A04B9D1C28514B5700A7CD5F /* Recipe.swift */,
+				A0EAB4F028642D6600B383F7 /* DrinkRecommendations.swift */,
+				A03833C22858480F00220B09 /* SearchView.swift */,
+				A0369D10285EEEF1008DD311 /* RecipeCardView.swift */,
+				A0EAB4F22864306500B383F7 /* DrinksCardView.swift */,
+				A0369D142861607A008DD311 /* RecipeRating.swift */,
+				A03833C428584BA500220B09 /* RecipeView.swift */,
+				A0369D12285F181D008DD311 /* RecipeDetailsView.swift */,
+				A0EAB4F82866BAA800B383F7 /* DrinkDetailsView.swift */,
+				A0EAB4F628657E7100B383F7 /* DrinkScrollsView.swift */,
+				A03833CC2858538000220B09 /* ScrollsView.swift */,
+				A0369D16286161A2008DD311 /* cookingView.swift */,
+				A03833C628584CDA00220B09 /* SectionView.swift */,
+				A03833CE2858569400220B09 /* FavoriteRecipes.swift */,
+			);
+			path = FitnessMealRecommendations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +353,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A13401A28514D50009527E2 /* WorkoutCalorieLoss.swift in Sources */,
+				C63C37DB285521E5005593F3 /* UserInfo.swift in Sources */,
+				A04B9CEE2851471700A7CD5F /* myFitnessAppApp.swift in Sources */,
+				EC94A26F286A5B5E00517A0C /* ContentView.swift in Sources */,
+				C633D2DA2860189B00A70A22 /* CalorieCalculatorOutputView.swift in Sources */,
+				A0369D17286161A2008DD311 /* cookingView.swift in Sources */,
+				A03833C528584BA500220B09 /* RecipeView.swift in Sources */,
+				A0EAB4F92866BAA800B383F7 /* DrinkDetailsView.swift in Sources */,
+				A0369D11285EEEF1008DD311 /* RecipeCardView.swift in Sources */,
+				A03833CD2858538000220B09 /* ScrollsView.swift in Sources */,
+				A03833C32858480F00220B09 /* SearchView.swift in Sources */,
 				A04B9CF02851471700A7CD5F /* ContentView.swift in Sources */,
+				A0EAB4F728657E7100B383F7 /* DrinkScrollsView.swift in Sources */,
+				A03833C728584CDA00220B09 /* SectionView.swift in Sources */,
+				A04B9D1D28514B5700A7CD5F /* Recipe.swift in Sources */,
+				A0EAB4F128642D6600B383F7 /* DrinkRecommendations.swift in Sources */,
 				A04B9CEE2851471700A7CD5F /* myFitnessAppApp.swift in Sources */,
 				7ACCC65B2869199500AAE976 /* UpperBodyView.swift in Sources */,
 				7ACCC6592868D8E700AAE976 /* Cardio.swift in Sources */,
@@ -303,6 +377,11 @@
 				7ACCC6572868D81500AAE976 /* WorkoutModifiers.swift in Sources */,
 				7ACCC661286A5B1A00AAE976 /* CalorieView.swift in Sources */,
 				7ADFDCDB28677850004E885A /* WorkoutUI.swift in Sources */,
+				A03833BD285834D100220B09 /* MealRecommendationsUI.swift in Sources */,
+				A0369D13285F181D008DD311 /* RecipeDetailsView.swift in Sources */,
+				A0EAB4F32864306500B383F7 /* DrinksCardView.swift in Sources */,
+				A0369D152861607A008DD311 /* RecipeRating.swift in Sources */,
+				A03833CF2858569400220B09 /* FavoriteRecipes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
