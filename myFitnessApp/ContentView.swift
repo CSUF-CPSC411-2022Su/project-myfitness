@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
+
 import Foundation
+
 
 struct ContentView: View {
     init(){
@@ -18,6 +20,9 @@ struct ContentView: View {
         
     }
 }
+
+
+
 
 struct CalorieCalculatorInput: View {
     @StateObject var userInfo = UserInfo()
