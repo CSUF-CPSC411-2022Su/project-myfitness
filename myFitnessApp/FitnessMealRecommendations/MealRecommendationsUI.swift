@@ -13,24 +13,29 @@ struct MealRecommendationsUI: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading, spacing: 14) {
-                Text("Recipes 🥙")
+                Text("Recommendations")
                     .font(.largeTitle)
                     .fontWeight(.black)
                     .padding()
-
-                Text("Great job! What would you like to cook today?")
-                    .font(.body)
+    
+                Text("Great job on your workout today! Here are some recipes and drinks we love: ")
+                    .font(.title3)
                     .fontWeight(.bold)
+                
+                Spacer()
+                Text("Recipes 🥙")
+                    .font(.largeTitle)
+                    .bold()
 
                 // Different views
 
-                SearchView()
-
-                RecipeView()
+                //SearchView()
 
                 ScrollsView()
 
-                DrinkView()
+               Text("Drinks 🧊")
+                    .font(.largeTitle)
+                    .bold()
 
                 DrinkScrollsView()
 

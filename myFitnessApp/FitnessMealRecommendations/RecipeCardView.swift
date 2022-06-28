@@ -7,10 +7,11 @@
 
 import SwiftUI
 
+//@Brief: Displays the card view of the recipes.
 struct RecipeCardView: View {
     var recipe: Recipe
+    //Indicated if impact occured on screen.
     var hapticTouch = UIImpactFeedbackGenerator(style: .heavy)
-    
     @State private var showModel: Bool = false
     
     var body: some View {
@@ -28,7 +29,7 @@ struct RecipeCardView: View {
                                     .font(Font.title.weight(.light))
                                     .foregroundColor(Color.white)
                                     .imageScale(.small)
-                                    .shadow(color: Color("ColorBlackTransparentLight"), radius: 2, x: 0, y: 0)
+                                   // .shadow(color: Color("ColorBlackTransparentLight"), radius: 2, x: 0, y: 0)
                                     .padding(.trailing, 20)
                                     .padding(.top, 20)
                                 Spacer()

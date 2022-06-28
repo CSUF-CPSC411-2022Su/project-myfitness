@@ -15,7 +15,7 @@ struct ScrollsView: View {
                 ForEach(healthy) { recipe in RecipeCardView(recipe: recipe)
                 }
             }
-            .frame(maxWidth: 2000, maxHeight: 640)
+            .frame(maxWidth: 2000, maxHeight: 540)
             .padding(.horizontal)
             .shadow(radius: 5)
         }

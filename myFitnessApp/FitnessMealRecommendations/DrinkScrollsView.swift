@@ -15,7 +15,7 @@ struct DrinkScrollsView: View {
                 ForEach(healthy) { drink_ in DrinksCardView(drink_: drink_)
                 }
             }
-            .frame(maxWidth: 1500,maxHeight: 640)
+            .frame(maxWidth: 2000, maxHeight: 540)
             .padding(.horizontal)
             .shadow(radius: 5)
         }

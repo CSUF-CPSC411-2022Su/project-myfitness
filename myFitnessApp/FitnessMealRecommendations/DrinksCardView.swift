@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//@Breif: Contains the card view of Drinks.
 struct DrinksCardView: View {
     var drink_: Drinks
     var hapticTouch = UIImpactFeedbackGenerator(style: .heavy)
@@ -28,7 +29,7 @@ struct DrinksCardView: View {
                                     .font(Font.title.weight(.light))
                                     .foregroundColor(Color.white)
                                     .imageScale(.small)
-                                    .shadow(color: Color("ColorBlackTransparentLight"), radius: 2, x: 0, y: 0)
+                                    //.shadow(color: Color("ColorBlackTransparentLight"), radius: 2, x: 0, y: 0)
                                     .padding(.trailing, 20)
                                     .padding(.top, 20)
                                 Spacer()
@@ -54,8 +55,8 @@ struct DrinksCardView: View {
                     DrinkPrep(ddrink: drink_)
                         
                 }
-                .padding()
-                .padding(.bottom, 12)
+                  .padding()
+                  .padding(.bottom, 12)
             }
             
             .onTapGesture {

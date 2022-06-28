@@ -91,5 +91,25 @@ var Drink = [
             "1) Toss the chopped orange and green grapes into a blender. Blend well.",
             "2) Pour it into a glass. Add lime juice and powdered roasted cumin seeds.",
             "3) Stir well and drink."],
-           calories: "90 CAL")
+           calories: "90 CAL"),
+    
+    Drinks(image: "Energy", title: "Lemon and Lime Energy Tonic", information: "Energy boosting and packed with vitamin C, this lemon and lime tonic is the perfect pick me up drink!", rating: 5, difficulty: "EASY", prep_time: "5",
+           ingrediants: [
+            "2 tablespoons organic raw honey",
+            "1 cup coconut water",
+            "1/4 cup fresh lime juice",
+            "1/4 cup fresh lemon juice",
+            "1 cup cold water or seltzer",
+            "1/8 teaspoon paprika"],
+           instructions: [
+            "1) Put honey in a bowl and add a little coconut water. Whisk until honey has dissolved. Add remaining coconut water and stir well.",
+            "2) Pour lime and lemon juice through a strainer, over a bowl, to remove pulp. Add to coconut water and honey.",
+            "3) Add remaining ingredients and stir.",
+            "4) Serve with ice cubes."], calories: "208 CAL"),
+    
+    Drinks(image: "BananaSmoothie", title: "Banana Smoothie", information: "Bananas and coconut water are both packed with potassium, so when you put the two together, you get a powerhouse of a drink.", rating: 4, difficulty: "EASY", prep_time: "5 MIN", ingrediants: [""],
+           instructions: [
+                          "Banana 1/2",
+                          "Coconut water 1/2 cup",
+                          "Orange or mosambi juice 1/2 glass, freshly squeezed if possible."], calories: "250 CAL")
 ]
