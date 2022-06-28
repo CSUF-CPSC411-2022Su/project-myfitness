@@ -18,7 +18,7 @@ struct MealRecommendationsUI: View {
                     .fontWeight(.black)
                     .padding()
     
-                Text("Great job on your workout today! Here are some recipes and drinks we love: ")
+                Text("Great job on your workout today! 🏋️‍♂️ Here are some healthy recipes and drinks we love: ")
                     .font(.title3)
                     .fontWeight(.bold)
                 

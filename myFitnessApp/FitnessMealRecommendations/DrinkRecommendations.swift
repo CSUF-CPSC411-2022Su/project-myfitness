@@ -93,6 +93,7 @@ var Drink = [
             "3) Stir well and drink."],
            calories: "90 CAL"),
     
+    //Lemon and Lime Energy Tonic
     Drinks(image: "Energy", title: "Lemon and Lime Energy Tonic", information: "Energy boosting and packed with vitamin C, this lemon and lime tonic is the perfect pick me up drink!", rating: 5, difficulty: "EASY", prep_time: "5",
            ingrediants: [
             "2 tablespoons organic raw honey",
@@ -107,6 +108,7 @@ var Drink = [
             "3) Add remaining ingredients and stir.",
             "4) Serve with ice cubes."], calories: "208 CAL"),
     
+    //Banana Smoothie
     Drinks(image: "BananaSmoothie", title: "Banana Smoothie", information: "Bananas and coconut water are both packed with potassium, so when you put the two together, you get a powerhouse of a drink.", rating: 4, difficulty: "EASY", prep_time: "5 MIN", ingrediants: [""],
            instructions: [
                           "Banana 1/2",
