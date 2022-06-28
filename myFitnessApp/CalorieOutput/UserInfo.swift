@@ -19,8 +19,8 @@ enum Gender: String, CaseIterable {
     case female
 }
 
-class UserInfo: ObservableObject{
-    //TBD
+class UserInfo: ObservableObject {
+    // TBD
     @Published var weight: Double
     
     @Published var height: Double
@@ -32,43 +32,34 @@ class UserInfo: ObservableObject{
     @Published var exercise: Exercise
     
     var BMR: Double {
-        
-        get {
-            if gender == .male {
-                let part1 = 655.1 + (9.563 * weight)
-                let part2 = (1.850 * height)
-                let part3 = (4.676 * Double(age))
-                return Double( part1 + part2  - part3 )
-            } else {
-                let part1 = 66.47 + (13.75 * weight)
-                let part2 = (5.003 * height)
-                let part3 = (6.755 * Double(age))
-                return Double(part1 + part2 - part3)
-                
-            }
+        if gender == .male {
+            let part1 = 655.1 + (9.563 * weight)
+            let part2 = (1.850 * height)
+            let part3 = (4.676 * Double(age))
+            return Double(part1 + part2 - part3)
+        } else {
+            let part1 = 66.47 + (13.75 * weight)
+            let part2 = (5.003 * height)
+            let part3 = (6.755 * Double(age))
+            return Double(part1 + part2 - part3)
         }
     }
-    
     
     let currentExercise: Exercise = .littleToNone
     
     var AMR: Double {
-        
-        get {
-            switch currentExercise {
-            case .littleToNone:
-                    return BMR * 1.2
-            case .light:
-                    return BMR * 1.375
-            case .moderate:
-                    return BMR * 1.55
-            case .active:
-                    return BMR * 1.725
-            case .veryActive:
-                    return BMR * 1.9
-            }
+        switch currentExercise {
+        case .littleToNone:
+            return BMR * 1.2
+        case .light:
+            return BMR * 1.375
+        case .moderate:
+            return BMR * 1.55
+        case .active:
+            return BMR * 1.725
+        case .veryActive:
+            return BMR * 1.9
         }
-        
     }
     
     init(weight: Double, height: Double, gender: Gender, age: Int, exercise: Exercise) {
@@ -79,7 +70,7 @@ class UserInfo: ObservableObject{
         self.exercise = exercise
     }
     
-    init(){
+    init() {
         self.weight = 0
         self.height = 0
         self.gender = .male
@@ -87,9 +78,7 @@ class UserInfo: ObservableObject{
         self.exercise = .littleToNone
     }
     
-    func calculateCalorieIntake() -> Double{
+    func calculateCalorieIntake() -> Double {
         return 0
     }
-    
-    
 }

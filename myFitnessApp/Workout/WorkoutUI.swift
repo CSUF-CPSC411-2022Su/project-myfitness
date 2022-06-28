@@ -9,13 +9,13 @@ import Foundation
 import SwiftUI
 
 struct WorkoutUI: View {
-    //@State var reps = ""
-    //@State var sets = ""
-    //@State var distance = ""
-    //@State var time = ""
-    //@State var weight = ""
+    // @State var reps = ""
+    // @State var sets = ""
+    // @State var distance = ""
+    // @State var time = ""
+    // @State var weight = ""
     var body: some View {
-        GeometryReader { geometry in
+        GeometryReader { _ in
             NavigationView {
                 ZStack {
                     VStack {
@@ -28,11 +28,11 @@ struct WorkoutUI: View {
                             Image("fitness11111")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width:300, height: 300)
-                                //.padding(.top, -200)
+                                .frame(width: 300, height: 300)
+                            // .padding(.top, -200)
                         }
                         HStack {
-                            //Button(action)
+                            // Button(action)
                             NavigationLink(destination: CardioView()) {
                                 Text("Cardio")
                                     .modifier(NavModifiers())
@@ -41,7 +41,7 @@ struct WorkoutUI: View {
                                 Text("Strength")
                                     .modifier(NavModifiers())
                             }
-                        }//.frame(width: .infinity, height: geometry.size.height / 2)
+                        } // .frame(width: .infinity, height: geometry.size.height / 2)
                         VStack {
                             Image("fitness22222")
                                 .resizable()
@@ -49,22 +49,20 @@ struct WorkoutUI: View {
                                 .clipShape(Circle())
                         }
                     }
-                }//End of ZStack
+                } // End of ZStack
                 .background(
-                       Image("green11111")
-                           .resizable()
-                           .edgesIgnoringSafeArea(.all)
-                           .frame(width: 850, height: 850)
-               )
-            }//End of Navigation
-        }//End of GeometryReader
-    }//End of body View
-}//End of View struct
+                    Image("green11111")
+                        .resizable()
+                        .edgesIgnoringSafeArea(.all)
+                        .frame(width: 850, height: 850)
+                )
+            } // End of Navigation
+        } // End of GeometryReader
+    } // End of body View
+} // End of View struct
 struct WorkoutUI_Previews: PreviewProvider {
     static var previews: some View {
         WorkoutUI()
             .previewInterfaceOrientation(.portrait)
     }
 }
-
-
