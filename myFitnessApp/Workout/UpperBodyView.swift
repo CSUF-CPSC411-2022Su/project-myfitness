@@ -94,7 +94,7 @@ struct UpperBodyView: View {
                     }.padding()
                     Group {
                         if isCalculated {
-                            Text("You lost \(upperWorkoutInfo.upperWeightLoss)")
+                            Text("Calories lost: \(upperWorkoutInfo.upperWeightLoss)")
                         }
                     }
                 } // End of first VStack

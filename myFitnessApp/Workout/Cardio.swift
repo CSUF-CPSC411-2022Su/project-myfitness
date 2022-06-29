@@ -60,15 +60,28 @@ struct CardioView: View {
                     if let validTime = Double(time) {
                         workoutInfo.time = validTime
                     }
-                    if let validWeight = Double(weightkg) {
-                        workoutInfo.weightkg = validWeight
-                    }
-                    if let validDistance = Double(distance) {
-                        let check = workoutInfo.METcardiovalue
-                        if check > 0 {
-                            workoutInfo.met = check
-                            workoutInfo.distance = validDistance
-                            workoutInfo.weightLossCardio = workoutInfo.cardioWeightLoss()
+                    Button("Calculate"){
+                        if let validTime = Double(time) {
+                            workoutInfo.time = validTime
+                        }
+                        if let validWeight = Double(weightkg) {
+                            workoutInfo.weightkg = validWeight
+                        }
+                        if let validDistance = Double(distance) {
+                            let check = workoutInfo.METcardiovalue
+                            if check > 0 {
+                                workoutInfo.met = check
+                                workoutInfo.distance = validDistance
+                                workoutInfo.weightLossCardio = workoutInfo.cardioWeightLoss()
+                            }
+                        }
+                        isCalculated.toggle()
+                        hideKeyboard()
+                    }.padding()
+                    Group {
+                        if isCalculated {
+                            Text("Calories lost: \(workoutInfo.weightLossCardio)")
+
                         }
                     }
                     isCalculated.toggle()
