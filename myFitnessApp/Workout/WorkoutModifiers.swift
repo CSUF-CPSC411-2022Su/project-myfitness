@@ -15,6 +15,7 @@ struct TitleText: ViewModifier {
             .foregroundColor(Color.black)
     }
 }
+
 struct OtherText: ViewModifier {
     func body(content: Content) -> some View {
         content
@@ -22,6 +23,7 @@ struct OtherText: ViewModifier {
             .foregroundColor(Color.black)
     }
 }
+
 struct RegularText: ViewModifier {
     func body(content: Content) -> some View {
         content
@@ -29,6 +31,7 @@ struct RegularText: ViewModifier {
             .foregroundColor(Color.black)
     }
 }
+
 struct NavModifiers: ViewModifier {
     func body(content: Content) -> some View {
         content
@@ -39,6 +42,7 @@ struct NavModifiers: ViewModifier {
             .padding(20)
     }
 }
+
 struct TextFieldModifiers: ViewModifier {
     func body(content: Content) -> some View {
         content
