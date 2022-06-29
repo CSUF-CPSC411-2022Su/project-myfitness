@@ -96,7 +96,7 @@ struct CoreView: View {
                     }.padding()
                     Group {
                         if isCalculated {
-                            Text("You lost \(coreWorkoutInfo.coreWeightLoss)")
+                            Text("Calories lost: \(coreWorkoutInfo.coreWeightLoss)")
                         }
                     }
                 }//End of first VStack

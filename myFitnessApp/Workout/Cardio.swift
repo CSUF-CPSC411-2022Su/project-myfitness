@@ -76,7 +76,7 @@ struct CardioView: View {
                     }.padding()
                     Group {
                         if isCalculated {
-                            Text("You lost \(workoutInfo.weightLossCardio)")
+                            Text("Calories lost: \(workoutInfo.weightLossCardio)")
                         }
                     }
                 }//End of VStack
