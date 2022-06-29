@@ -15,13 +15,14 @@ struct WorkoutUI: View {
     // @State var time = ""
     // @State var weight = ""
     var body: some View {
-        GeometryReader { _ in
+        //GeometryReader { _ in
             NavigationView {
                 ZStack {
                     VStack {
                         Spacer()
                         VStack {
                             Text("Choose Your Workout")
+                                .padding(.top, -50)
                                 .modifier(TitleText())
                         }
                         VStack {
@@ -29,26 +30,27 @@ struct WorkoutUI: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height: 300)
-                            // .padding(.top, -200)
-                        }
+                                .padding(.top, -30)
+                        }//End of VStack containing topimage
                         HStack {
-                            // Button(action)
                             NavigationLink(destination: CardioView()) {
                                 Text("Cardio")
                                     .modifier(NavModifiers())
+                                    .padding(.top, -30)
                             }
                             NavigationLink(destination: StrengthView()) {
                                 Text("Strength")
                                     .modifier(NavModifiers())
+                                    .padding(.top, -30)
                             }
-                        } // .frame(width: .infinity, height: geometry.size.height / 2)
+                        }//End of HStack containing NavigationLinks
                         VStack {
                             Image("fitness22222")
                                 .resizable()
                                 .scaledToFit()
                                 .clipShape(Circle())
-                        }
-                    }
+                        }//End of VStack containing bottom image
+                    }//End of top VStack
                 } // End of ZStack
                 .background(
                     Image("green11111")
@@ -56,8 +58,8 @@ struct WorkoutUI: View {
                         .edgesIgnoringSafeArea(.all)
                         .frame(width: 850, height: 850)
                 )
-            } // End of Navigation
-        } // End of GeometryReader
+            } // End of Navigation View
+        //} // End of GeometryReader
     } // End of body View
 } // End of View struct
 struct WorkoutUI_Previews: PreviewProvider {
@@ -66,3 +68,10 @@ struct WorkoutUI_Previews: PreviewProvider {
             .previewInterfaceOrientation(.portrait)
     }
 }
+#if canImport(UIKit)
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+#endif
