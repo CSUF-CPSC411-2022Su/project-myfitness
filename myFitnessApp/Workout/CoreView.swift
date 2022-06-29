@@ -9,8 +9,13 @@ import Foundation
 import SwiftUI
 
 struct CoreView: View {
-    @StateObject var global = GlobalModel.global
-    @State var isPresenting = false
+    
+    @StateObject var coreWorkoutInfo = CoreWorkoutInfo()
+    @AppStorage("reps") var repsCore = ""
+    @AppStorage("sets") var setsCore = ""
+    @AppStorage("weight") var weightkg = ""
+    @State private var isCalculated = false
+    
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -20,46 +25,80 @@ struct CoreView: View {
                             Image("core11111")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 300, height:400)
+                                .frame(width: 400, height:400)
                             Image("core22222")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 300, height:400)
+                                .frame(width: 400, height:400)
                             Image("core33333")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 300, height:400)
-                            Image("fitness22222")
+                                .frame(width: 400, height:400)
+                            Image("core4")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 300, height:400)
-                            Image("fitness22222")
+                                .frame(width: 400, height:400)
+                            Image("core5")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 300, height:400)
+                                .frame(width: 400, height:400)
+                            Image("core6")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 400, height:400)
                         }
                     }.frame(height: geometry.size.height / 3)
                     Text("Input the number of reps and sets to see how many calories you lost")
-                        //.padding(.top, -50)
                         .modifier(RegularText())
+                        .multilineTextAlignment(.center)
                         .padding()
-                    HStack {
+                    VStack {
                         Text("Enter your reps")
                             .modifier(RegularText())
-                        TextField("", text: $global.reps)
-                        //.modifier(RegularText())
-                    //let reps = Int($global.reps.text!) ?? 0
+                        TextField("Reps", text: $repsCore)
+                            .modifier(TextFieldModifiers())
+                            .keyboardType(.decimalPad)
+                            .multilineTextAlignment(.center)
                     }
-                    HStack {
+                    VStack {
                         Text("Enter your sets")
                             .modifier(RegularText())
-                        TextField("", text: $global.sets)
-                            //.modifier(RegularText())
+                        TextField("Sets", text: $setsCore)
+                            .modifier(TextFieldModifiers())
+                            .keyboardType(.decimalPad)
+                            .multilineTextAlignment(.center)
                     }
-                    Button("Calculate") {
-                        isPresenting = true
-                    }.modifier(OtherText())
-                    NavigationLink(destination: CaloriesView(), isActive: $isPresenting) {EmptyView()}
+                    VStack {
+                        Text("Enter weight to complete exercise")
+                            .modifier(RegularText())
+                        TextField("Weight", text: $weightkg)
+                            .modifier(TextFieldModifiers())
+                            .keyboardType(.decimalPad)
+                            .multilineTextAlignment(.center)
+                    }
+                    Button("Calculate"){
+                        if let validSets = Double(setsCore) {
+                            coreWorkoutInfo.setsCore = validSets
+                        }
+                        if let validWeight = Double(weightkg) {
+                            coreWorkoutInfo.weightkg = validWeight
+                        }
+                        if let validReps = Double(repsCore) {
+                            let check = coreWorkoutInfo.METstrengthvalue
+                            if check > 0 {
+                                coreWorkoutInfo.met = check
+                                coreWorkoutInfo.repsCore = validReps
+                                coreWorkoutInfo.coreWeightLoss = coreWorkoutInfo.getCoreWeightloss()
+                            }
+                        }
+                        isCalculated.toggle()
+                        hideKeyboard()
+                    }.padding()
+                    Group {
+                        if isCalculated {
+                            Text("You lost \(coreWorkoutInfo.coreWeightLoss)")
+                        }
+                    }
                 }//End of first VStack
             }//End of ZStack
             .background(
@@ -69,6 +108,9 @@ struct CoreView: View {
                        .edgesIgnoringSafeArea(.all)
                        .frame(width: 850, height: 850)
                )
+        }//End of GeometryReader
+        .onTapGesture {
+            hideKeyboard()
         }
     }//End of body View
 }//End of CoreView struct

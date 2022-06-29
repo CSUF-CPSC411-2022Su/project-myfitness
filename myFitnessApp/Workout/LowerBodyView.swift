@@ -9,57 +9,96 @@ import Foundation
 import SwiftUI
 
 struct LowerBodyView: View {
-    @StateObject var global = GlobalModel.global
-    @State var isPresenting = false
+    
+    @StateObject var lowerWorkoutInfo = LowerWorkoutInfo()
+    @AppStorage("repsLow") var repsLow = ""
+    @AppStorage("setsLow") var setsLow = ""
+    @AppStorage("weight") var weightkg = ""
+    @State private var isCalculated = false
+    
     var body: some View {
         GeometryReader { geometry in
             ZStack {
                 VStack{
                     ScrollView(.horizontal) {
                         HStack {
-                            Image("fitness22222")
+                            Image("legs1")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 300, height:400)
-                            Image("fitness22222")
+                                .frame(width: 400, height:400)
+                            Image("legs2")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 300, height:400)
-                            Image("fitness22222")
+                                .frame(width: 400, height:400)
+                            Image("legs3")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 300, height:400)
-                            Image("fitness22222")
+                                .frame(width: 400, height:400)
+                            Image("legs4")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 300, height:400)
-                            Image("fitness22222")
+                                .frame(width: 400, height:400)
+                            Image("legs5")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 300, height:400)
+                                .frame(width: 400, height:400)
+                            Image("legs6")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 400, height:400)
                         }
                     }.frame(height: geometry.size.height / 3)
                     Text("Input the number of reps and sets to see how many calories you lost")
-                        //.padding(.top, -50)
                         .modifier(RegularText())
+                        .multilineTextAlignment(.center)
                         .padding()
-                    HStack {
+                    VStack {
                         Text("Enter your reps")
                             .modifier(RegularText())
-                        TextField("", text: $global.reps)
-                        //.modifier(RegularText())
-                    //let reps = Int($global.reps.text!) ?? 0
+                        TextField("Reps", text: $repsLow)
+                            .modifier(TextFieldModifiers())
+                            .keyboardType(.decimalPad)
+                            .multilineTextAlignment(.center)
                     }
-                    HStack {
+                    VStack {
                         Text("Enter your sets")
                             .modifier(RegularText())
-                        TextField("", text: $global.sets)
-                            //.modifier(RegularText())
+                        TextField("Sets", text: $setsLow)
+                            .modifier(TextFieldModifiers())
+                            .keyboardType(.decimalPad)
+                            .multilineTextAlignment(.center)
                     }
-                    Button("Calculate") {
-                        isPresenting = true
-                    }.modifier(OtherText())
-                    NavigationLink(destination: CaloriesView(), isActive: $isPresenting) {EmptyView()}
+                    VStack {
+                        Text("Enter weight to complete exercise")
+                            .modifier(RegularText())
+                        TextField("Weight", text: $weightkg)
+                            .modifier(TextFieldModifiers())
+                            .keyboardType(.decimalPad)
+                            .multilineTextAlignment(.center)
+                    }
+                    Button("Calculate"){
+                        if let validSets = Double(setsLow) {
+                            lowerWorkoutInfo.setsLow = validSets
+                        }
+                        if let validWeight = Double(weightkg) {
+                            lowerWorkoutInfo.weightkg = validWeight
+                        }
+                        if let validReps = Double(repsLow) {
+                            let check = lowerWorkoutInfo.METstrengthvalue
+                            if check > 0 {
+                                lowerWorkoutInfo.met = check
+                                lowerWorkoutInfo.repsLow = validReps
+                                lowerWorkoutInfo.lowerWeightLoss = lowerWorkoutInfo.getLowerWeightLoss()
+                            }
+                        }
+                        isCalculated.toggle()
+                        hideKeyboard()
+                    }.padding()
+                    Group {
+                        if isCalculated {
+                            Text("You lost \(lowerWorkoutInfo.lowerWeightLoss)")
+                        }
+                    }
                 }//End of first VStack
             }//End of ZStack
             .background(
@@ -69,6 +108,9 @@ struct LowerBodyView: View {
                        .edgesIgnoringSafeArea(.all)
                        .frame(width: 850, height: 850)
                )
+        }//End of GeometryReader
+        .onTapGesture {
+            hideKeyboard()
         }
     }//End of body View
 }//End of View Struct

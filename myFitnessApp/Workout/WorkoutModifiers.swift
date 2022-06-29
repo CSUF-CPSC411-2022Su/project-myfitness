@@ -12,7 +12,7 @@ struct TitleText: ViewModifier {
     func body(content: Content) -> some View {
         content
             .font(.largeTitle)
-            .foregroundColor(Color.white)
+            .foregroundColor(Color.black)
     }
 }
 struct OtherText: ViewModifier {
@@ -25,7 +25,7 @@ struct OtherText: ViewModifier {
 struct RegularText: ViewModifier {
     func body(content: Content) -> some View {
         content
-            //.font(.caption)
+            .font(.custom("Arial", size: 18))
             .foregroundColor(Color.black)
     }
 }
@@ -39,4 +39,14 @@ struct NavModifiers: ViewModifier {
             .padding(20)
     }
 }
-
+struct TextFieldModifiers: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .frame(width: 150)
+            .padding(5)
+            .background(Color.white)
+            .foregroundColor(Color.black)
+            .cornerRadius(10)
+            .padding(5)
+    }
+}
