@@ -31,12 +31,12 @@ struct DrinkDetailsView: View {
                     DrinkPrep(ddrink: drinkss)
                     
                     // @Breif: Ingrediants
-                    Text("Ingrediants")
+                    Text("Ingredients")
                         .font(.system(.title3, design: .serif))
                         .fontWeight(.semibold)
                     
                     VStack(alignment: .leading, spacing: 5) {
-                        ForEach(drinkss.ingrediants, id: \.self) {
+                        ForEach(drinkss.ingredients, id: \.self) {
                             item in
                             VStack {
                                 Text(item)

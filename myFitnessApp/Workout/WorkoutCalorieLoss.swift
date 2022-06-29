@@ -7,7 +7,6 @@
 import Foundation
 import SwiftUI
 class WorkoutInfo: ObservableObject {
-    
     @Published var distance: Double
     @Published var time: Double
     @Published var weightkg: Double
@@ -21,25 +20,22 @@ class WorkoutInfo: ObservableObject {
         case 5...10: return 5
         case 11...: return 8
         default: return 1
-            
         }
     }
  
-    func cardioWeightLoss() -> Double{
-        
+    func cardioWeightLoss() -> Double {
         return time * met * 3.5 * weightkg / 200
-        
     }
     
-    init(weightkg: Double, time: Double, distance: Double, met: Double, weightLossCardio: Double)
-    {
+    init(weightkg: Double, time: Double, distance: Double, met: Double, weightLossCardio: Double) {
         self.weightkg = weightkg
         self.time = time
         self.distance = distance
         self.met = met
         self.weightLossCardio = weightLossCardio
     }
-   init() {
+
+    init() {
         self.weightkg = 0
         self.time = 0
         self.distance = 0
@@ -49,7 +45,6 @@ class WorkoutInfo: ObservableObject {
 }
 
 class CoreWorkoutInfo: ObservableObject {
-    
     @Published var repsCore: Double
     @Published var setsCore: Double
     @Published var weightkg: Double
@@ -68,10 +63,9 @@ class CoreWorkoutInfo: ObservableObject {
         default: return 1
         }
     }
-    func getCoreWeightloss() -> Double{
-        
+
+    func getCoreWeightloss() -> Double {
         return repsCore * met * 3.5 * weightkg / 200
-        
     }
     
     init(weightkg: Double, setsCore: Double, repsCore: Double, met: Double, coreWeightLoss: Double)
@@ -82,7 +76,8 @@ class CoreWorkoutInfo: ObservableObject {
         self.met = met
         self.coreWeightLoss = coreWeightLoss
     }
-   init() {
+
+    init() {
         self.weightkg = 0
         self.setsCore = 0
         self.repsCore = 0
@@ -92,7 +87,6 @@ class CoreWorkoutInfo: ObservableObject {
 }
 
 class UpperWorkoutInfo: ObservableObject {
-    
     @Published var repsUp: Double
     @Published var setsUp: Double
     @Published var weightkg: Double
@@ -111,20 +105,20 @@ class UpperWorkoutInfo: ObservableObject {
         default: return 1
         }
     }
-    func getUpperWeightLoss() -> Double{
-        
+
+    func getUpperWeightLoss() -> Double {
         return repsUp * met * 3.5 * weightkg / 200
     }
     
-    init(weightkg: Double, setsUp: Double, repsUp: Double, met: Double, upperWeightLoss: Double)
-    {
+    init(weightkg: Double, setsUp: Double, repsUp: Double, met: Double, upperWeightLoss: Double) {
         self.weightkg = weightkg
         self.setsUp = setsUp
         self.repsUp = repsUp
         self.met = met
         self.upperWeightLoss = upperWeightLoss
     }
-   init() {
+
+    init() {
         self.weightkg = 0
         self.setsUp = 0
         self.repsUp = 0
@@ -134,7 +128,6 @@ class UpperWorkoutInfo: ObservableObject {
 }
 
 class LowerWorkoutInfo: ObservableObject {
-    
     @Published var repsLow: Double
     @Published var setsLow: Double
     @Published var weightkg: Double
@@ -153,27 +146,24 @@ class LowerWorkoutInfo: ObservableObject {
         default: return 1
         }
     }
-    func getLowerWeightLoss() -> Double{
-        
+
+    func getLowerWeightLoss() -> Double {
         return repsLow * met * 3.5 * weightkg / 200
     }
     
-    init(weightkg: Double, setsLow: Double, repsLow: Double, met: Double, lowerWeightLoss: Double)
-    {
+    init(weightkg: Double, setsLow: Double, repsLow: Double, met: Double, lowerWeightLoss: Double) {
         self.weightkg = weightkg
         self.setsLow = setsLow
         self.repsLow = repsLow
         self.met = met
         self.lowerWeightLoss = lowerWeightLoss
     }
-   init() {
+
+    init() {
         self.weightkg = 0
         self.setsLow = 0
         self.repsLow = 0
         self.met = 0
         self.lowerWeightLoss = 0
     }
-    
-    
 }
-

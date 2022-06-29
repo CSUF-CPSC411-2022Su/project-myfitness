@@ -35,7 +35,7 @@ struct Recipe: Identifiable {
     var instructions: [String]
     
     // @breif: Will contain the ingrediants of the recipe.
-    var ingrediants: [String]
+    var ingredients: [String]
 }
 
 var recipes = [
@@ -49,7 +49,7 @@ var recipes = [
            cooktime: "5 MIN",
            instructions: ["1) In a medium bowl, whisk together all dressing ingredients until completely incorporated. Season with salt and pepper.",
                           "2) Combine all salad ingredients in a large bowl. Add dressing, toss to combine, and serve immediately."],
-           ingrediants: ["5 oz. fresh spinach",
+           ingredients: ["5 oz. fresh spinach",
                          "1 apple, such as Honeycrisp, thinly sliced",
                          "1/3 c. crumbled feta",
                          "1/4 red onion, thinly sliced",
@@ -80,7 +80,7 @@ var recipes = [
                           "2) In a large ovenproof skillet over medium-high heat, heat oil. Add chicken in a single layer and cook until golden on bottom, about 5 minutes, then flip chicken breasts.",
                           "3) To skillet, add broth, butter, garlic, and lemon slices and cook until chicken is cooked through and sauce has reduced slightly, 3 minutes.",
                           "4) Spoon sauce on top of chicken and garnish with parsley."],
-           ingrediants: ["1/2 c. all-purpose flour",
+           ingredients: ["1/2 c. all-purpose flour",
                          "1 tbsp. lemon pepper seasoning",
                          "1 tsp. kosher salt",
                          "2 lemons, divided",
@@ -104,7 +104,7 @@ var recipes = [
                           "3) For the rice, combine all ingredients with 2 cups (500ml) cold water and 1 tsp salt flakes in a pan over high heat. Bring to the boil. Reduce heat to low, cover and cook, without stirring, for 12 minutes or until water has been absorbed and rice is tender. Uncover and stir with a fork.",
                           "4) For dressing, combine yoghurt, lemon juice and remaining garlic in a small bowl.",
                           "5) Place rice in a bowl. Top with eggplant and cucumber. Drizzle over dressing and scatter with mint. Toss to serve."],
-           ingrediants: ["½ cup (125ml) olive oil",
+           ingredients: ["½ cup (125ml) olive oil",
                          "1 tsp each cumin seeds, caraway seeds, fennel seeds & nigella seeds",
                          "1 tbs brown mustard seeds",
                          "24 fresh curry leaves",
@@ -139,7 +139,7 @@ var recipes = [
                           "3) To make the dressing, combine all ingredients in a small jar and shake to combine.",
                           
                           "4) To prepare the salad, massage a third of the dressing into the kale. Add the other ingredients and combine, finishing with the remaining dressing and pomegranate seeds on top."],
-           ingrediants: ["You can basically swap and change ingredients here as you wish, but below is the way I usually make it. I sometimes also add in chopped broccoli and beetroot if I have them, or steam some greens. Other nuts such as almonds work well instead of the walnuts. Fresh blueberries would also be great when in season.",
+           ingredients: ["You can basically swap and change ingredients here as you wish, but below is the way I usually make it. I sometimes also add in chopped broccoli and beetroot if I have them, or steam some greens. Other nuts such as almonds work well instead of the walnuts. Fresh blueberries would also be great when in season.",
                          
                          "2/3 cup of quinoa, rinsed",
                          "Half a butternut pumpkin",
@@ -176,7 +176,7 @@ var recipes = [
                "3) Dressing: dump all of the quinoa bowl dressing ingredients into a blender (or use an immersion blender) and blend until the sauce is smooth and creamy.",
                "4)Assemble your quinoa bowls! Oh right—another awesome thing about doing quinoa bowls for dinner is that they’re naturally customizable. If you’ve got picky eaters in the house, try laying out all of the various topping options and letting everyone just assemble their bowls as they please. If you leave the chicken off, suddenly you’ve got a vegan quinoa bowl! If you were to top the bowl with nothing BUT chicken and dressing, you’d still be able to call that a pretty healthy dinner. In other words, everybody wins!"
            ],
-           ingrediants: ["1 cup of quinoa (red, white or mixed), rinsed",
+           ingredients: ["1 cup of quinoa (red, white or mixed), rinsed",
                          "2 cups of vegetable or chicken stock",
                          "cilantro",
                          "grated carrots",
@@ -195,7 +195,7 @@ var recipes = [
         "4) Combine sauce ingredients except corn starch in a bowl and stir well.",
         "5)Turn the heat up to medium-high and add the sauce. Bring to a simmer. Combine cornstarch with 3 tablespoons water (or broth) and add it the sauce a little bit at a time while whisking to reach desired consistency. Let simmer 2 minutes. Add vegetables, beef (and any juices) to the pan and cook until heated through.",
         "6)Serve with noodles or over rice."],
-        ingrediants: [
+        ingredients: [
                       "2 tablespoons vegetable oil divided",
                       "1 pound flank steak thinly sliced",
                       "2 tablespoons cornstarch",

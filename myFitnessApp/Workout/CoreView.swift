@@ -9,43 +9,42 @@ import Foundation
 import SwiftUI
 
 struct CoreView: View {
-    
     @StateObject var coreWorkoutInfo = CoreWorkoutInfo()
     @AppStorage("reps") var repsCore = ""
     @AppStorage("sets") var setsCore = ""
     @AppStorage("weight") var weightkg = ""
     @State private var isCalculated = false
-    
+
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                VStack{
+                VStack {
                     ScrollView(.horizontal) {
                         HStack {
                             Image("core11111")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 400, height:400)
+                                .frame(width: 400, height: 400)
                             Image("core22222")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 400, height:400)
+                                .frame(width: 400, height: 400)
                             Image("core33333")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 400, height:400)
+                                .frame(width: 400, height: 400)
                             Image("core4")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 400, height:400)
+                                .frame(width: 400, height: 400)
                             Image("core5")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 400, height:400)
+                                .frame(width: 400, height: 400)
                             Image("core6")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 400, height:400)
+                                .frame(width: 400, height: 400)
                         }
                     }.frame(height: geometry.size.height / 3)
                     Text("Input the number of reps and sets to see how many calories you lost")
@@ -76,7 +75,7 @@ struct CoreView: View {
                             .keyboardType(.decimalPad)
                             .multilineTextAlignment(.center)
                     }
-                    Button("Calculate"){
+                    Button("Calculate") {
                         if let validSets = Double(setsCore) {
                             coreWorkoutInfo.setsCore = validSets
                         }
@@ -99,22 +98,21 @@ struct CoreView: View {
                             Text("You lost \(coreWorkoutInfo.coreWeightLoss)")
                         }
                     }
-                }//End of first VStack
-            }//End of ZStack
+                } // End of first VStack
+            } // End of ZStack
             .background(
-                   Image("green44444")
-                       .resizable()
-                       .aspectRatio(geometry.size, contentMode: .fill)
-                       .edgesIgnoringSafeArea(.all)
-                       .frame(width: 850, height: 850)
-               )
-        }//End of GeometryReader
+                Image("green44444")
+                    .resizable()
+                    .aspectRatio(geometry.size, contentMode: .fill)
+                    .edgesIgnoringSafeArea(.all)
+                    .frame(width: 850, height: 850)
+            )
+        } // End of GeometryReader
         .onTapGesture {
             hideKeyboard()
         }
-    }//End of body View
-}//End of CoreView struct
-
+    } // End of body View
+} // End of CoreView struct
 
 struct CoreView_Previews: PreviewProvider {
     static var previews: some View {
